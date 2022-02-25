@@ -1,0 +1,26 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StudentTest {
+
+//등수를 구하는 메서드
+	public class StudentTest{
+		public void setRanking(List<Student>stdList) {
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		List<Student> stdList = new ArrayList<Student>();
+		
+	}
+	
+
+}
+
+
+
+class Student implements C

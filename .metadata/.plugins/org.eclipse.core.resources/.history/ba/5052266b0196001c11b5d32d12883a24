@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+h1{
+color:#ff0000;
+}
+</style>
+
+<body>
+
+	<h1>JSP: Java Server Page</h1>
+	<p>html을 기본으로 하는 내용에 java코드를 기술 할수 있다.</p>
+	<p>서버내에서 실행되는 script프로그램이다.</p>
+	<p>Html태그안에 자바코드를 기술 할때는</p>
+	&lt;% %> 기호사이에 기술한다.
+	
+	<%
+	//클라이언트 전송시 입력한 id와 pass를 받는다.
+	//request라는 내장 객체를 이용한다.
+	String userId = request.getParameter("id");
+	String userPass = request.getParameter("pass");
+	
+	//출력할때는 아래의 둘중하나로
+	response.setCharacterEncoding("utf-8");
+	response.setContentType("text/html; charset=utf-8");
+	
+	%>
+	
+	
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;kr.or.ddit.basic.lotto_a.java&apos; to &apos;Lotto_a.java&apos;&#x0D;&#x0A;- Original project: &apos;collectionTest&apos;&#x0D;&#x0A;- Original element: &apos;kr.or.ddit.basic.lotto_a.java&apos;&#x0D;&#x0A;- Renamed element: &apos;kr.or.ddit.basic.Lotto_a.java&apos;" description="Rename compilation unit &apos;lotto_a.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;kr.or.ddit.basic{lotto_a.java" name="Lotto_a.java" references="false" stamp="1645751446072" version="1.0"/>
+</session>

@@ -1,0 +1,56 @@
+package kr.or.ddit.basic;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class Baseball_a {
+
+	private ArrayList<Integer> numList; //난수가저장될 List
+	private ArrayList<Integer> userList; //사용자가 입력한 값이 저장될
+	
+	private int strike; //스트라이크개수
+	private int ball; //볼개수가 저장될
+	
+	private Scanner scan = new Scanner(System.in);
+	
+	
+	public static void main(String[] args) {
+		
+		new BaseballTest().gameStart();
+
+	}
+	
+	
+	//게임이 시작되는 메서드
+	public void gameStart() {
+		
+		
+	}
+	
+	//1~9사이의 서로다른 난수 3개를 만들어서 List에 저장하는 메서드
+	//(Set이용)
+	private void getNum() {
+		HashSet<Integer> numSet = new HashSet<Integer>();
+		
+		//1~9사이의 난수만들기
+		while(numSet.size()<3) {
+			numSet.add((int)(Math.random()*9+1));
+		}
+		
+		//만들어진 난수를 List에 저장한다.
+		numList = new ArrayList<Integer>(numSet);
+		
+		//List의 데이터를 섞어준다.
+		Collections.shuffle(numList);
+		
+		
+	}
+	
+	
+	
+	
+	
+
+}

@@ -1,0 +1,50 @@
+package kr.or.ddit.basic;
+
+import java.util.Scanner;
+
+public class Lotto_a {
+
+	public static void main(String[] args) {
+	 new Lotto_a().lottoStart();	
+
+	}
+	
+	
+	
+	//시작메서드
+	public void lottoStart() {
+		
+		while(true) {
+			int chice = displayMenu();
+			
+			switch(chice){
+			case 1: break;
+			case 2: 
+				System.out.println();
+				System.out.println("감사합니다");
+				return;
+			default:
+				System.out.println("번호를 잘못 선택했습니다.");
+				System.out.println("'1'또는 '2'를 입력하세요.");
+			}
+			
+		}
+		
+	}
+	
+	//메뉴를 출력하고 작업번호를 입력받아서 반환하는 메서드
+	private int displayMenu() {
+		System.out.println("=========================="
+				+ "\n\tLotto 프로그램"
+				+ "\n--------------------------"
+				+ "\n1. Lotto 구입"
+				+ "\n2. 프로그램 종료"
+				+ "\n=========================="
+				+ "\n메뉴선택 > ");
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		
+		return num;
+	}
+
+}

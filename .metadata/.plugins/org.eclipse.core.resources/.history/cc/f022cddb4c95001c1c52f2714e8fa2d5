@@ -1,0 +1,26 @@
+<!doctype html> 
+<html>
+ <head>
+ <title>안녕~</title>
+ </head>
+ 
+ <body>
+	HELLO~
+	안녕하세요
+	HTML를 공부합시다
+	
+	<p>HELLO~</p>
+	<p>안녕하세요~</p>
+	<p>HTML를 공부합시다~</p>
+	
+	<!--프로그래머가 입력한 그대로 보여주는 태그---->
+	<pre>
+	안녕하세요
+	
+	반갑습니다.
+	</pre>
+	
+	
+ </body>
+
+</html>

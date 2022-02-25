@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css" type="text/css">
+
+
+<script type="text/javascript">
+	function send(){
+		
+		//get방식으로 전송
+/* 		//폼에서 입력한 id와 pass값을 가져온다.
+		var vid = document.getElementById("id").value;
+		var vpass = document.getElementById("pass").value;
+		
+		//서버로 보내기 - form객체가 필요
+		var vform = document.getElementById('ff');
+		vform.action = "form.jsp?id="+vid+"&pass="+vpass; //공백있으면안됨
+		vform.method="get"; 
+		vform.submit(); //get타입으로 */
+		
+		
+		
+		
+		//post방식으로 전송
+		var vform = document.getElementById('ff');
+		vform.submit(); //서버로전송한다.
+		
+		
+		
+		
+	}
+	
+</script>
+
+
+</head>
+<body>
+
+	<h2>form전송 - get방식</h2>
+	<form action="form.jsp" method="get">
+		<label>아이디</label><input type="text" name="id"><br>
+		<label>비밀번호</label><input type="passward" name="pass"><br>
+		<input type="submit">
+		<input type="reset"> <!-- 초기화 -->
+	</form>
+	
+	
+	<h2>form전송 - post방식</h2>
+	<form action="form.jsp" method="post">
+		<label>아이디</label><input type="text" name="id"><br>
+		<label>비밀번호</label><input type="passward" name="pass"><br>
+		<input type="submit" value="전송"><!-- submit는 서버전송기능 있음 -->
+		<input type="image" src="../images/images01.gif" alt="전송">
+		<!-- submit과 같은기능임(서버전송) -->
+	</form>
+	
+	
+	
+	<h2>&lt;input type="button"></h2>
+	<form action="form.jsp" method="post">
+		<label>아이디</label><input type="text" name="id"><br>
+		<label>비밀번호</label><input type="passward" name="pass"><br>
+		<input type="button" value="전송" onclick="alert('hello')"><!-- button은 서버전송기능 없음 -->
+	</form>
+	
+	
+	
+	<h2>&lt;input type="button2"></h2>
+	<p>input type="button"일때는 기능을 별도로 부여해야한다.</p>
+	<p>기능을 부여할때는 onclick="함수이름()" 함수호출이 이루어진다</p>
+	<p>java script에서 함수를 정의하고 입력요소의 값을 script에서 처리후 서버로 전송한다.</p>
+	<form id="ff" action="form.jsp" method="post">
+		<label>아이디</label><input type="text" name="id" id="id"><br>
+		<label>비밀번호</label><input type="passward" name="pass" id="pass"><br>
+		<input type="button" value="전송" onclick="send()"><!-- button은 서버전송기능 없음 -->
+	</form>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</body>
+</html>

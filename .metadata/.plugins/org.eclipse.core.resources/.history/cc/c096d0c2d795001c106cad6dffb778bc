@@ -1,0 +1,31 @@
+package kr.or.ddit.basic;
+
+public class lotto_a {
+
+	public static void main(String[] args) {
+	 new Lotto_a	
+
+	}
+	
+	
+	
+	//시작메서드
+	public void lottoStart() {
+		
+	}
+	
+	//메뉴를 출력하고 작업번호를 입력받아서 반환하는 메서드
+	private int displayMenu() {
+		System.out.println("=========================="
+				+ "\n\tLotto 프로그램"
+				+ "\n--------------------------"
+				+ "\n1. Lotto 구입"
+				+ "\n2. 프로그램 종료"
+				+ "\n=========================="
+				+ "\n메뉴선택 > ");
+		
+		
+		return 0;
+	}
+
+}

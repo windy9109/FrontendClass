@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<style>
+		*{
+		/*margin:0;
+		padding:0;*/
+		}
+		img{
+			width:500px;
+			height:500px;
+		}
+		body *{
+			margin-left: 50px;
+			/*margin-top:20px;*/
+			 text-align: center;
+			
+		
+		}
+		/* 
+		h1,img,p,h2{
+					margin: auto;
+			display: block;
+			
+			border-width: 1px;
+			border-style: solid;  //dotted, double, solid, dashed
+			border-color: #ff0000;
+			 text-align: center;
+			 
+		}
+		*/
+		</style>
+	</head>
+
+	
+	<body>
+		<!--여백주기
+		margin-left, margin-top
+		margin-rigth, margin-bottom
+		-->
+		<H1>
+		welcome to the Web Programmiing!
+		</H1>
+		<!--<img src="images/에스프레소.jpg" alt="">-->
+		
+		<p>
+		<img src="images/핫초코.jpg" alt="">
+		</p>
+		
+		<P>
+		언제든지오셔서 질문이 있으시면 올려주세요! 여러분을 환영합니다.
+		</P>
+		
+		<H2>
+		내용
+		</H2>
+		
+		<P>html5, CSS, Javascript, jQuerym SQL, JSP, ...</P>
+		
+	</body>
+</html>
