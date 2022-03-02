@@ -6,8 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="phoneBook"/>
+		<item key="selection" value="새롭게 등록할 전화번호를 입력하세요"/>
 		<list key="findhistory">
+			<item value="새롭게 등록할 전화번호를 입력하세요"/>
+			<item value="객실 상태"/>
+			<item value="getGuestName()"/>
+			<item value="test.Room.getGuestName()"/>
+			<item value="방번호 입력"/>
 			<item value="phonebook"/>
 			<item value="setRanking"/>
 			<item value="List&lt;Student&gt;"/>

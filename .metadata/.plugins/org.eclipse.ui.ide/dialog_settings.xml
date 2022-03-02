@@ -7,10 +7,10 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\AdvancedJava"/>
 			<item value="C:\BasicJava\Library"/>
 			<item value="C:\BasicJava\JavaProgramming"/>
 			<item value="C:\Basic_TeamProject\Project\UsedTrading"/>
-			<item value="C:\AdvancedJava"/>
 			<item value="D:\A_TeachingMaterial\03_HighJava\workspace\collectionTest"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
