@@ -3,6 +3,21 @@
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.ThreadTest02"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.SumThread"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.CountDown"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.DataInput"/>
+    <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.metal.MetalBorders.TableHeaderBorder"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="test.DataInput"/>
+    <fullyQualifiedTypeName name="test.CountDown"/>
+    <fullyQualifiedTypeName name="test.SumThread"/>
+    <fullyQualifiedTypeName name="test.SumThread0"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

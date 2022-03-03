@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div{
+border: 1px solid red;
+background: yellow;
+widows: 200px;
+height: 200px;
+
+display: none;
+opacity: 0;
+}
+</style>
+
+<script type="text/javascript">
+var vd;
+function proc(){
+	//div에 접근 검색 - getElementById('aaa')
+	vd = document.getElementById('dd');
+	vd.style.display = "block";
+	
+	
+}
+function aaa(){
+	vd.style.display ="none";
+	
+}
+
+</script>
+
+</head>
+<body>
+
+<input type="button" value="보이기" onclick="proc()">
+<input type="button" value="감추기" onclick="aaa()">
+<br><br>
+<div id="dd"></div>
+
+</body>
+</html>
