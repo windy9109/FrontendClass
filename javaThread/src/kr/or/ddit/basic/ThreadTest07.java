@@ -49,11 +49,14 @@ class DataInput2 extends Thread{
 	
 	@Override
 	public void run() {
-		String str = JOptionPane.showInputDialog("1.가위 2.바위 3.보 숫자를 선택하세요.");
+		String str = null;
+		do {
+			str = JOptionPane.showInputDialog("1.가위 2.바위 3.보 숫자를 선택하세요.");
+		}while(  !(str.equals("1") || str.equals("2")|| str.equals("3")) );
+		
 		inputCheck = true;
 		int str2    = Integer.parseInt(str);
 		int random = (int)(Math.random()*(3+1-1)+1);
-
 		
 		if(random == str2) {
 			System.out.println("비겼습니다.");
@@ -64,21 +67,19 @@ class DataInput2 extends Thread{
 		if(str2 == 1 && random == 3 || str2 == 2 && random == 1 || str2 == 3 && random == 2) {
 			System.out.println("당신이 이겼습니다.");
 		}
-		System.out.println("");
+
 		
-		System.out.println("- 결 과 -");
+		System.out.println("\n- 결 과 -");
 		switch(random) {
 			case 1:System.out.println("컴퓨터: 가위"); break;
 			case 2:System.out.println("컴퓨터: 바위"); break;
 			case 3:System.out.println("컴퓨터: 보"); break;
-			default:System.out.println("유효한 입력이 아닙니다.");
 		}
 		
 		switch(str2) {
 			case 1:System.out.println("당신: 가위"); break;
 			case 2:System.out.println("당신: 바위"); break;
 			case 3:System.out.println("당신: 보"); break;
-			default:System.out.println("유효한 입력이 아닙니다.");
 		}
 		
 	}

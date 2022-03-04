@@ -11,7 +11,9 @@ widows: 200px;
 height: 200px;
 
 display: none;
-opacity: 0;
+}
+#hide{
+display: none;
 }
 </style>
 
@@ -20,14 +22,21 @@ var vd;
 function proc(){
 	//div에 접근 검색 - getElementById('aaa')
 	vd = document.getElementById('dd');
+	
+	//div를 나타나게 한다.
 	vd.style.display = "block";
 	
+	//감추기 버튼도 나타나게 한다.
+ 	vh = document.getElementById('hide');
+	vh.style.display ="block";
+	 
 	
 }
-function aaa(){
+
+ function aaa(){
 	vd.style.display ="none";
 	
-}
+} 
 
 </script>
 
@@ -35,7 +44,7 @@ function aaa(){
 <body>
 
 <input type="button" value="보이기" onclick="proc()">
-<input type="button" value="감추기" onclick="aaa()">
+<input type="button" value="감추기" id="hide" onclick="aaa()">
 <br><br>
 <div id="dd"></div>
 

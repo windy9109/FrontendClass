@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+a{
+text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: fantasy;
+}
+a:hover{
+color: yellow;
+}
+body{
+min-width: 1000px;
+}
+#header{
+    background-color: yellow;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+#nav{
+    background: #ff8888;
+    height: 300px;
+    width: 100%;
+    display: inline-block;
+        
+}
+img{
+width: 70px;
+height: 70px;
+}
+#contrent{
+    background: #7de9e4;
+    height: 300px;
+    margin: 10px;
+    display: grid;
+}
+.box{
+    border-radius: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: -webkit-fill-available;
+    border: 3px dotted #468f63;
+    padding: 15px;
+    background: #ffeba5;
+}
+#footer{
+    clear: both;
+    background: #b8a6ff;
+    padding: 20px;
+    text-align: center;
+
+    display: inline-block;
+    width: 100%;
+
+}
+.box:nth-child(1){
+margin-bottom: 0;
+}
+.navBox{
+        margin: 20px;
+    display: inline-block;
+    width: -webkit-fill-available;
+}
+.a1{
+            border-radius: 50px;
+            box-sizing: border-box;
+            
+}
+.conBox{     float: left; width: 30%;     margin-top: 10px; }
+.conBox2{     float: left; width: 70%; }
+.tit1{margin: 0;}
+</style>
+
+</head>
+<body>
+
+
+<div id ="header" class="a1">
+<h1>My Blog page</h1>
+<div calss="hdText">시멘틱 태그로 만들어진 페이지 입니다.</div>
+</div>
+
+<span>
+<div class="conBox">
+<div id ="nav" class="a1">
+<div class ="navBox">
+<h2>Links</h2>
+<ul>
+<li><a href="#">w3schooks</a></li>
+<li><a href="#">MOZILLA</a></li>
+<li><a href="#">HTML Dogs</a></li>
+<img src ="../images/spongebob.png">
+<p>스폰지밥</p>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="conBox2">
+<div id ="contrent" class="a1">
+<div class=box>
+<h3 div class="tit1">Semantic Tags</h3>
+<div class="text">시멘틱요소(Semantic elements)들은 브라우저에게 요소의 의미나 목적을 명확하게 알려주는 요소이다</div>
+</div>
+<div class=box>
+<h3 div class="tit1">div와 span</h3>
+<div class="text">div은 "divi의 약자로서 페이지를 논리적인 섹션으로 분리하는데 사용되는 태그이다. span요소는 인라인 요소로서 텍스트를 위한 컨테이너로 사용할 수 있다."</div>
+
+</div>
+</div>
+</div>
+</span>
+<div id ="footer" class="a1">Copright(c)2013 Hong</div>
+
+</body>
+</html>

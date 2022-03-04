@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="kr.or.ddit.basic.ThreadTest02"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
@@ -12,12 +11,26 @@
     <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.metal.MetalBorders.TableHeaderBorder"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="test.DataInput"/>
     <fullyQualifiedTypeName name="test.CountDown"/>
     <fullyQualifiedTypeName name="test.SumThread"/>
     <fullyQualifiedTypeName name="test.SumThread0"/>
-    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="AutoSaveThread"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.TargetThread"/>
+    <fullyQualifiedTypeName name="test.PrintStateThread2"/>
+    <fullyQualifiedTypeName name="test.TargetThread"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.YieldThread"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.ThreadStopTest01"/>
+    <fullyQualifiedTypeName name="java.lang.Thread.State"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.ThreadStopTest02"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.DisplyCharacter"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.PrintStateThread"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.PrintCharacter"/>
 </qualifiedTypeNameHistroy>
