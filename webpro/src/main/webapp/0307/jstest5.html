@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel ="stylesheet" href="../css/public.css">
+ <link rel="shortcut icon" type="image/x-icon" href="../images/check.png"/>
+<script>
+	var now = new Date();
+	var vd;
+	
+	window.onload = function() {
+		//div를 검색
+		vd = document.getElementsByTagName('div');
+		vd[0].innerHTML = now +"<br>";
+		
+		/*한국표준시*/
+		var now2 = now.toLocaleString();
+		vd[0].innerHTML += now2 +"<br>";	
+		
+		/*날짜만*/
+		var now3 = now.toLocaleDateString();
+		vd[0].innerHTML += now3 +"<br>";
+		
+	}
+	
+	function proc() {
+		//div객체요소가 필요 - 검색
+		
+		//rgb로 출력
+		cr = parseInt(Math.random()*256);
+		cg = parseInt(Math.random()*256);
+		cb = parseInt(Math.random()*256);		
+		
+		// vd[0].style.background = "rgb("+cr+","+cg+","+cb+")";
+		
+		//16진수로 변환
+		cr = cr.toString(16);
+		cg = cg.toString(16);
+		cb = cb.toString(16);
+		vd[0].style.background ="#"+cr+cg+cb;
+		
+	}	
+</script>
+<style>
+span{
+color: red;
+}
+</style>
+
+
+</head>
+<body>
+<pre>
+<span>window.onload = function(){  }</span>
+body태그내의 모든요소들이 document객체의 object로 완성되어 실행후 가정먼저 실행되는 코드다.
+</pre>
+
+<div onclick="proc()"></div>
+
+
+</body>
+</html>

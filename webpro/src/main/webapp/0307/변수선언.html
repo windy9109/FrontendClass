@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel ="stylesheet" href="../css/public.css">
+<script>
+function varlet() {
+	//좀더 넓은 영역에서는 var를 주로쓴다.
+	var vd = document.getElementById('dd1');
+	var vd2 = document.getElementById('dd2');
+	
+/* 	for(let i=1; i<5; i++){
+		//좁게쓰는 영역에서는 let를 주로쓴다.
+	} */
+	
+	//var를 붙이지 않으면 전역변수로 사용가능
+	cr = parseInt(Math.random()*256);
+	cg = parseInt(Math.random()*256);
+	cb = parseInt(Math.random()*256);
+	
+	
+	cr = cr.toString(16);
+	cg = cg.toString(16);
+	cb = cb.toString(16);
+	vd2.style.background = "#"+cr+cg+cb;
+	
+}
+
+</script>
+</head>
+<body>
+
+<pre>
+변수선언
+var: 한 함수내에서 같은 이름이 중복되어 선언이 가능
+	 : 함수영역의 변수 선언
+let: 한 함수내에서 같은 이름이 중복되어 선언이 불가능
+	 var보다 범위를 작게 사용한다 - 블럭영역의 변수
+const: 값의 변경이 없을 경우. 값의 변화가 생기면 안돼는 경우
+const PI = 3.141592
+</pre>
+<input type="button" onclick="varlet()" value="확인">
+<br>
+<div id="dd1">  </div>
+<div id="dd2">  </div>
+</body>
+
+</html>

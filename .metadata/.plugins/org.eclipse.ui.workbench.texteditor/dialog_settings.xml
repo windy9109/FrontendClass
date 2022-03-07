@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="#footer"/>
+		<item key="selection" value=".contain_box span b"/>
 		<list key="findhistory">
+			<item value=".contain_box span b"/>
+			<item value="article .contain_box img"/>
+			<item value=".contain_box span"/>
+			<item value="#right ol a"/>
+			<item value="section"/>
+			<item value="nav"/>
+			<item value="article ol"/>
+			<item value="footer"/>
+			<item value="#left"/>
+			<item value="#right"/>
+			<item value="#left ul li"/>
+			<item value="set"/>
 			<item value="#footer"/>
 			<item value=".box"/>
 			<item value="#contrent"/>
-			<item value="#nav"/>
-			<item value="img"/>
-			<item value="#header"/>
-			<item value=".conBox"/>
-			<item value="SumThread"/>
-			<item value="DataInput"/>
-			<item value="새롭게 등록할 전화번호를 입력하세요"/>
-			<item value="객실 상태"/>
-			<item value="getGuestName()"/>
-			<item value="test.Room.getGuestName()"/>
-			<item value="방번호 입력"/>
-			<item value="phonebook"/>
 		</list>
 		<list key="replacehistory">
 		</list>

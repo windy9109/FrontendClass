@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link red="stylesheet" href="../css/public.css" >
+<style>
+ol{
+margin: 0;
+padding: 0;
+}
+*{
+ text-decoration: none;
+     list-style: none;
+}
+header { background: #ebebeb; }
+header img {   width: 50px;  margin-left: 20px; }
+header h1{ display: inline-block; }
+nav{ text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #93b16d;
+    margin: 5px 0;
+    border-top: 2px dotted #93b16d; }
+ nav a{     font-family: monospace;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin: 15px; } 
+ contain{     display: inline-block; }
+ #left{  display: inline-block;
+    width: 20%;
+    background: #ccc;
+    min-height: 407px;
+    float: left; }
+ #left ul{  padding: 0; }
+ #left ul li{  background: #888;
+    padding: 10px;
+    letter-spacing: -2px;
+    font-size: 14px;
+    border-bottom: 1px solid #666; }
+  #left ul li a{
+  color: #fff;
+    font-weight: 600;
+  }
+ section{  
+  width: 60%;
+    display: inline-block;
+    float: left;
+    background: #fff;
+    min-height: 455px;
+    }
+ #right{       width: 20%;
+    display: inline-block;
+    min-height: 407px;
+    background: #ccc; }
+ #right ol li{}
+ #wrap{     min-width: 1000px;
+    display: inline-block; }
+ footer{ text-align: center;
+    padding: 30px;
+    background: #000;
+    color: #fff;
+        margin-top: 5px;
+     }   
+ 
+ article ol{
+        width: 33.333%;
+    display: inline-block;
+    float: left;
+    padding: 0;
+    margin: 0;
+ }
+article .contain_box img{
+width: 80%;
+}
+.contain_box span b{
+       display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+article{
+    display: inline-block;
+}
+.contain_box span{ 
+    margin: 5px;
+    display: table;
+    padding: 5px;
+    border: 1px solid #ddd;
+    padding-top: 0;
+    margin-top: 0;
+    min-height: 530px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+ }
+ 
+ .contain_box span li{
+     font-size: 12px;
+    padding: 10px;
+ }
+
+#right ol{
+padding: 0 30px;
+}
+#right ol a{
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.ss{    display: inline-block;
+    background: #ccc;}
+input[name=Id]{
+width: 100%;
+}   
+
+input[name=Pass]{
+width: 100%;
+}   
+    
+.contain_box span bb {
+    display: table-cell;
+    vertical-align: middle;
+}
+    
+</style>
+
+<script type="text/javascript">
+window.onload = function() {
+	var vd = document.getElementById("aside");
+	vd.style.min-height(article.style.height);
+}
+
+</script>
+
+</head>
+<body>
+<div id = "wrap">
+	<header><img src="../images/쇼핑백.jpg"><h1>Web Shopping</h1></header>
+	<nav>
+	<a href="#">HOME</a>
+	<a href="#">SHOPPING ABOUT</a>
+	<a href="#">NEWS</a>
+	<a href="#">MY ACCOUNT</a>
+	<a href="#">CONTACTS</a>
+	</nav>
+	<contain>
+	<span class="ss">
+	<aside id ="left">
+		<ul>
+			<li><a href="#">컴퓨터</a></li>
+			<li><a href="#">의류</a></li>
+			<li><a href="#">스포츠/레저</a></li>
+			<li><a href="#">가구/인테리어</a></li>
+			<li><a href="#">식품</a></li>
+		</ul>
+	</aside>
+	<section>
+		<article>
+			<ol class="contain_box">
+				<span>
+				<bb>
+				
+					<b><img src="../images/컴퓨터1.jpg"></b>
+					<li>한성컴퓨터 TFG AX8726 데스크탑 i7
+						8700/RTX2060(로스트아크,포트나이트,배틀그라운드,배그,오버워치,롤,피파,방송용,PC,방,조립,가정용,사무용,가성비,본체)<br>
+						<br>가격 1500000원</li>
+					<input type ="button" value="쇼핑카트에 추가하기">
+				</bb>
+				</span>
+			</ol>
+			<ol class="contain_box">
+				<span>
+				<bb>
+					<b><img src="../images/컴퓨터2.jpg"></b>
+					<li>
+					LG Gram i7 8700/RTX2060(로스트아크,포트나이트,배틀그라운드,배그,오버워치,롤,피파,방송용,PC,방,조립,가정용,사무용,가성비,본체)
+					<br><br>가격 1300000원</li>
+					<input type ="button" value="쇼핑카트에 추가하기">
+				</bb>
+				</span>
+			</ol>
+			<ol class="contain_box">
+				<span>
+				<bb>
+					<b><img src="../images/컴퓨터3.jpg"></b>
+					<li>N)CTO주문가능/애플정품/아이맥/MNE92KH/A [신한/KB국민 100만원 이상 11Pay 결제시 최대 22개월 무이자]
+					[신한/KB국민/NH농협/삼성 20만원 이상 11Pay 결제시 최대 12개월 무이자]
+					<br><br>가격 1200000원</li>
+					<input type ="button" value="쇼핑카트에 추가하기">
+				</bb>
+				</span>
+			</ol>
+		</article>
+		</span>
+	</section>
+	<aside id ="right">
+	<ol>
+		<h1>Shopping Cart</h1>
+		<div class="text01">현재 쇼핑카트에 물품이 없습니다.</div>
+		<a href="#">쇼핑카트 보기</a>
+	</ol>
+	<ol>
+		<h1>Log In</h1>
+		<div class="tit">아이디</div>
+		<input type="text" name="Id" id="Id">
+		<div class="tit">패스워드</div>
+		<input type="text" name="Pass" id="Pass">
+		<div>
+		<input type="button" value="로그인">
+		<input type="reset" value="초기화">
+		</div>
+		
+	<a href="#">회원가입</a>
+	<a href="#">비밀번호 분실</a>	
+	</ol>
+	
+	<ol>
+	
+	</ol>
+	
+	</aside>
+	</contain>
+	<footer>Copyright(c)2021 Hong</footer>
+</div>
+
+</body>
+</html>

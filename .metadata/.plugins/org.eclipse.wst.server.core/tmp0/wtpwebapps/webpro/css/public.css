@@ -7,6 +7,13 @@ padding: 30px;
 width:50%;
 }
 
+div{
+	width: 100%;
+height: 200px;
+border: 1px solid red;
+background: yellow;
+}
+
 label{
 /* 인라인 요소에 크기조절
 	display : inline block */
@@ -16,6 +23,15 @@ height: 40px;
 
 }
 
+pre{
+	border: 1px dotted blue;
+	background: skyblue;
+	margin: 10px;
+	padding: 10px;
+	font-size:  1.2em;
+	height: auto;
+	
+}
 
 
 input[type=image]{
