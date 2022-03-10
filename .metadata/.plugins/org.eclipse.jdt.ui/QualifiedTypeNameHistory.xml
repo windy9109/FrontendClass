@@ -32,7 +32,6 @@
     <fullyQualifiedTypeName name="kr.or.ddit.basic.GameState"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="kr.or.ddit.basic.CalcPIThread"/>
-    <fullyQualifiedTypeName name="kr.or.ddit.basic.PrintPIThread"/>
     <fullyQualifiedTypeName name="kr.or.ddit.basic.ShareObject"/>
     <fullyQualifiedTypeName name="kr.or.ddit.basic.TestThread"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
@@ -42,5 +41,18 @@
     <fullyQualifiedTypeName name="java.lang.Thread.State"/>
     <fullyQualifiedTypeName name="test.GameState"/>
     <fullyQualifiedTypeName name="test.GameState3"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.WorkObject"/>
+    <fullyQualifiedTypeName name="test.WorkObject1"/>
+    <fullyQualifiedTypeName name="test.ThreadA"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.PrintPIThread"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.ProducerThread"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.ConsumerThread"/>
     <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="test.DataBox"/>
+    <fullyQualifiedTypeName name="test.ProducerThread1"/>
+    <fullyQualifiedTypeName name="test.ConsumerThread"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.FileTest03"/>
+    <fullyQualifiedTypeName name="java.nio.file.Paths"/>
 </qualifiedTypeNameHistroy>

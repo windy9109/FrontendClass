@@ -6,30 +6,30 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=".contain_box span b"/>
+		<item key="selection" value="article"/>
 		<list key="findhistory">
-			<item value=".contain_box span b"/>
-			<item value="article .contain_box img"/>
+			<item value="article"/>
 			<item value=".contain_box span"/>
-			<item value="#right ol a"/>
-			<item value="section"/>
-			<item value="nav"/>
+			<item value="article .contain_box img"/>
+			<item value=".contain_box span bb &gt; strong"/>
+			<item value="#wrap"/>
+			<item value=".contain_box span strong"/>
+			<item value=".contain_box span bb"/>
+			<item value=".contain_box span li"/>
+			<item value=".contain_box_clot span bb"/>
+			<item value=".contain_box_clot span li"/>
+			<item value="article .contain_box_clot img"/>
+			<item value=".contain_box span b"/>
 			<item value="article ol"/>
-			<item value="footer"/>
-			<item value="#left"/>
-			<item value="#right"/>
-			<item value="#left ul li"/>
-			<item value="set"/>
-			<item value="#footer"/>
-			<item value=".box"/>
-			<item value="#contrent"/>
+			<item value="contain_box"/>
+			<item value="tit0"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="770"/>
-		<item key="DIALOG_Y_ORIGIN" value="282"/>
+		<item key="DIALOG_X_ORIGIN" value="953"/>
+		<item key="DIALOG_Y_ORIGIN" value="279"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="375"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>

@@ -9,38 +9,46 @@ function proc() {
 	in1 = parseInt(prompt("정수1 입력..."));
 	in2 = parseInt(prompt("정수2 입력..."));
 	
-/* 	var hap = in1 + in2; */
-/*  	str =  "입력1: " + in1 + "\n";
-	str += "입력2: "+ in2 + "\n";
-	str += "덧셈결과: "+hap; */
+ 	var hap = in1 + in2; 
 	
-	
-/* 	alert(str);
-	console.log(str);  */
-	
-	alert("원하는 연산을 클릭하세요");
 	//에러
 /*  	var qw = documenet.getElementsByTagName("div");
 	qw[0].innerHTML = str;  */
 
 
+	//정상(방법1)
+/* 	str = "입력1:"+ in1 +"\n";
+	str += "입력2:"+ in2 +"\n";
+	str += "덧셈결과: "+ hap;
 	
+	alert(str);
+	
+	console.log(str);
+	 */
+	
+	//정상(방법2)
+	str = "입력1:"+ in1 +"<br>";
+	str += "입력2:"+ in2 +"<br>";
+	str += "덧셈결과: "+ hap;
 	
 	//div 검색
- 	var vd = document.querySelector("div");
+  	var vd = document.querySelector("div");
 	vd.innerHTML = str; 
-	
 	
 }
 
 
 function calc(abc) {
-	//두수를 입력(더하기일때는 prompt일때 반드시 필요)
-/*  	var su1 = parseInt(prompt("첫번째 값을 입력해주세요."));
-	var su2 = parseInt(prompt("두번째 값을 입력해주세요.")); */
 	
+ 	su1 =  parseInt(prompt("입력1:"));
+ 	su2 =  parseInt(prompt("입력2:"));
+ 	
+	 	
+ 	
+ 	
+	//두수를 입력(더하기일때는 prompt일때 반드시 필요)
 	//abc의 값(+,-,/,*)을 비교 - if, switch
-	if(abc == "+"){
+  	if(abc == "+"){
 		result = in1 + in2;
 	}else if(abc == "-"){
 		result = in1 - in2;
@@ -48,17 +56,26 @@ function calc(abc) {
 		result = in1 * in2;
 	}else if(abc == "/"){
 		result = in1 / in2;
-	}
+	}  
 	
 	//각각을 계산
 	//id = res인 곳에 출력 - 검색
 	
-/* 	var Res = document.getElementById("#res");
-	Res.innerHTML =  result;  */
+/* 	str ="입력1: "+ su1 +"<br>";
+	str += "입력2: "+ su2 +"<br>";
 	
- 	var Res = document.querySelector("#res");
-	Res.innerHTML = result; 
+	str += su1 + abc + su2 + "=" + result + "<br>";
+	 */
+	 
+	 
 	
+	str = `입력1: ${su1}<br>`;
+ 	str += `입력2: ${su2} <br>`;
+ 	str += `${su1} ${abc} ${su2} = ${result} <br>`;
+ 	
+ 	document.querySelector("#res").innerHTML = str; 
+ 	document.getElementById("res").innerHTML = str; 
+	 
 	
 }
 
