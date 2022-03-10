@@ -11,6 +11,9 @@ padding: 0;
      list-style: none;
 }
 
+.logoimg{
+color: #000;	
+}
 iframe{
 	
 }
@@ -29,15 +32,14 @@ nav{ text-align: center;
  contain{   }
  #left{  display: inline-block;
     width: 20%;
-    background: #ccc;
     min-height: 407px;
     float: left; }
  #left ul{  padding: 0; }
- #left ul li{  background: #888;
+ #left ul li{ background: #585d70;
     padding: 10px;
     letter-spacing: -2px;
     font-size: 14px;
-    border-bottom: 1px solid #666; 
+    border-bottom: 1px solid #4d4d58;
     color: #fff;
     }
   #left ul li a{
@@ -45,7 +47,7 @@ nav{ text-align: center;
     font-weight: 600;
   }
  section{  
-  width: 60%;
+  width: 80%;
     display: inline-block;
     float: left;
     background: #fff;
@@ -53,8 +55,7 @@ nav{ text-align: center;
     }
  #right{       width: 20%;
     display: inline-block;
-    min-height: 407px;
-    background: #ccc; }
+    min-height: 407px; }
  #right ol li{}
  #wrap{     min-width: 1000px;
     display: inline-block;
@@ -134,8 +135,10 @@ padding: 0 30px;
     font-size: 12px;
 }
 
-.ss{  width: 100%;  display: inline-block;
-    background: #ccc;}
+.ss{      width: 100%;
+    display: inline-block;
+    background: #768299;
+    }
     
         
 input[name=Id]{
@@ -215,6 +218,13 @@ width: 100%;
     padding: 10px 0;
  }
  
+ 
+.sbox{
+	
+	display: inline-block;
+    width: 80%;
+    background: #cdc8bb;
+}
  
  .contain_box_clot span bb {
     display: table-cell;
