@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=".sbox"/>
+		<item key="selection" value="검색할 사람의"/>
 		<list key="findhistory">
+			<item value="검색할 사람의"/>
+			<item value="4"/>
 			<item value=".sbox"/>
 			<item value="#right"/>
 			<item value="section"/>
@@ -21,8 +23,6 @@
 			<item value=".contain_box span bb &gt; strong"/>
 			<item value="#wrap"/>
 			<item value=".contain_box span strong"/>
-			<item value=".contain_box span bb"/>
-			<item value=".contain_box span li"/>
 		</list>
 		<list key="replacehistory">
 		</list>

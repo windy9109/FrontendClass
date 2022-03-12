@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
-    <fullyQualifiedTypeName name="javax.swing.plaf.metal.MetalBorders.TableHeaderBorder"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="test.DataInput"/>
-    <fullyQualifiedTypeName name="test.CountDown"/>
-    <fullyQualifiedTypeName name="test.SumThread"/>
-    <fullyQualifiedTypeName name="test.SumThread0"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-    <fullyQualifiedTypeName name="AutoSaveThread"/>
-    <fullyQualifiedTypeName name="kr.or.ddit.basic.TargetThread"/>
-    <fullyQualifiedTypeName name="test.PrintStateThread2"/>
-    <fullyQualifiedTypeName name="test.TargetThread"/>
-    <fullyQualifiedTypeName name="kr.or.ddit.basic.YieldThread"/>
-    <fullyQualifiedTypeName name="kr.or.ddit.basic.ThreadStopTest01"/>
     <fullyQualifiedTypeName name="kr.or.ddit.basic.ThreadStopTest02"/>
     <fullyQualifiedTypeName name="kr.or.ddit.basic.DisplyCharacter"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
@@ -56,8 +42,22 @@
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="javax.swing.filechooser.FileNameExtensionFilter"/>
+    <fullyQualifiedTypeName name="javax.swing.JFileChooser"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.basic.stream.FileCopy"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.DataInput"/>
+    <fullyQualifiedTypeName name="java.io.DataInputStream"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+    <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.io.EOFException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="javax.swing.text.Document"/>
 </qualifiedTypeNameHistroy>
