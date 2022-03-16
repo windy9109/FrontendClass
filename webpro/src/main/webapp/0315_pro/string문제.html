@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+
+<script>
+function proc1(){
+	//주민번호 입력 - 110326 -4123456  
+	input = prompt("주민번호 입력");
+	
+	//추출하기 11 , 03, 26, 4 - 문자열로 추출 
+	yy =input.substr(0,2); //11
+	mm =input.substr(2,2); //03
+	dd= input.substr(4,2); //26
+	gend = input.substr(7,1);  //4
+	
+	//태어난 년도 구하기 -- 
+	//gend비교 - 1,2 - 1900 / 3,4 - 2000
+	if(gend == "1" || gend == "2")
+	    byear  = 1900 + parseInt(yy);
+	else 
+		byear = "20" + yy; 
+	
+	//성별구하기  gend비교 - 1,3   2,4
+	if(gend == "1" || gend == "3")
+	     gender = "남자";
+	else  
+	     gender = "여자";
+	
+	//나이 구하기 - 현재년도 - 태어난 년도  
+	today = new Date();
+	age =  today.getFullYear() - byear;
+	
+	//출력 
+	out = "주민번호: " + input.slice(0,8) + "******<br>"  
+	
+	out += "생년월일 : " + 
+	         byear + "년 "  + 
+	         mm + "월 " + 
+	         dd + "일<br>" 
+	out += "성별 : " + gender +"<br>"
+	out += "나이 : " + age 
+	
+	document.getElementById('result1').innerHTML = out;
+	
+	
+}
+
+function proc2(){
+	hap = 0;
+	
+	//곱하는 값 
+	multi = "234567892345";
+	
+	//입력 110325-41234567 - -추가 - 출력시 이용 
+	input = prompt("주민번호 입력");
+	
+	//작업변수 - 13자리 1103254123456
+	code = input.replace("-", "");
+	
+	
+	//반복문 이용 - 각 1자리씩 추출
+	
+	for(i=0; i<code.length-1 ; i++){
+		hap += multi.substr(i,1)  * code.substr(i,1) 
+	}
+	//hap을 11로 나눈 나머지 구하고 11에서 뺀다 
+	result = 11 - (hap % 11);
+		
+	//result 의 결과는 0~11 , 10은 0으로 11은 1로 변경
+	//if(result == 10) result = 0;
+	//if(result == 11) result = 1;
+	
+	result = result % 10;
+	
+	//주민번호 마지막 한자리와 result값이 같은지 비교 
+	if(code.substr(12, 1) == result){
+		res = "진짜"
+	}else {
+		res = "가짜"
+	}
+	
+	//출력 110325-4******
+	out = "주민번호: " + input.slice(0,8) + "******<br>"
+	out += res ;
+	
+	document.getElementById('result2').innerHTML = out;
+
+		
+}
+
+</script>
+
+
+</head>
+<body>
+
+<div class="box">
+ <pre>
+  주민등록번호를 입력 받아 
+  생년월일과 성별을 출력하는 프로그램
+  </pre>
+  <input type="button" value="확인" onclick="proc1()">
+  <div id="result1"></div>
+</div>
+
+<div class="box">
+ <pre>
+  주민등록번호를 입력 받아
+  주민등록번호의 유효성을 검사하는  프로그램
+  </pre>
+  <input type="button" value="확인" onclick="proc2()">
+  <div id="result2"></div>
+</div>
+</body>
+</html>
