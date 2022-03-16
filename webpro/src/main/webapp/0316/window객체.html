@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+
+<script type="text/javascript">
+function proc2() {
+	
+	arr = ["일요일","월요일","화요일","수요일","목요일","금요일","토요일"]
+	
+	
+	today = new Date();
+	date = today.toLocaleDateString();
+	day = arr[today.getDay()];
+	
+	date = date + "&nbsp;&nbsp;&nbsp;" + day;
+	
+	
+	//크기 지정해서 새창열기
+	//window.open("http://www.naver.com","대한민국","width=400 height=500");
+	
+	
+	win = window.open("sub.html","subwindow", "width=500 height=400 ");
+	// 여기서 left=100 top= 200과 같은 값을주면 아래의 moveTo의 값은 적용되지 않는다.
+	win.moveTo(200, 300);
+	//win.moveBy(300, 400); //By는 기존값에 +하여 추가이동시킨다.
+	
+	
+	
+	//자식창에 date 값을 출력한다.
+	win.onload = function() {
+		win.document.getElementById('result2').innerHTML = date;		
+	}
+
+	
+
+}
+</script>
+
+</head>
+<body>
+
+<div class="box">
+	<pre>
+	window : BOM의 최상위 객체
+	메소드 호출시 window는 생략가능
+	
+	window.open()
+	window.close()
+	window.aler(), window.prompt(), window.confirm()
+	</pre>
+	<input type="button" value="확인" onclick="proc2()">
+	<div id="result1"></div>
+</div>
+</body>
+</html>

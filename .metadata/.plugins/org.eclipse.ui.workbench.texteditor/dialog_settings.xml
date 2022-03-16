@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="검색할 사람의"/>
+		<item key="selection" value="PeopleSaxHandler"/>
 		<list key="findhistory">
+			<item value="PeopleSaxHandler"/>
+			<item value="SAXexample"/>
+			<item value="public class"/>
+			<item value="시작"/>
 			<item value="검색할 사람의"/>
 			<item value="4"/>
 			<item value=".sbox"/>
@@ -19,10 +23,6 @@
 			<item value=".ss"/>
 			<item value="article"/>
 			<item value=".contain_box span"/>
-			<item value="article .contain_box img"/>
-			<item value=".contain_box span bb &gt; strong"/>
-			<item value="#wrap"/>
-			<item value=".contain_box span strong"/>
 		</list>
 		<list key="replacehistory">
 		</list>

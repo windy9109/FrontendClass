@@ -52,7 +52,8 @@ function proc2(){
 	hap = 0;
 	
 	//곱하는 값 
-	multi = "234567892345";
+	//multi = "234567892345";
+	
 	
 	//입력 110325-41234567 - -추가 - 출력시 이용 
 	input = prompt("주민번호 입력");
@@ -62,9 +63,9 @@ function proc2(){
 	
 	
 	//반복문 이용 - 각 1자리씩 추출
-	
 	for(i=0; i<code.length-1 ; i++){
-		hap += multi.substr(i,1)  * code.substr(i,1) 
+		hap += (i%8+2)  * code.substr(i,1) 
+		//multi.substr(i,1)대신 (i%8+2)를 넣는다.
 	}
 	//hap을 11로 나눈 나머지 구하고 11에서 뺀다 
 	result = 11 - (hap % 11);
