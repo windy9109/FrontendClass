@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<style>
+.dimg{
+width: 200px;
+height: 200px;
+}
+img{
+width: 100%;
+height: 70%;
+}
+</style>
+
+
+<script type="text/javascript">
+	window.onload = function() {
+		vlis = document.getElementsByClassName('dimg');
+		for(i=0; i<vlis.length; i++){
+			vlis[i].addEventListener('click', addImage);
+		}
+	}
+	
+	function addImage() {
+		
+		random = parseInt(Math.random()*(10-5+1)+5);
+		sale = document.createTextNode("할인율: " +random+ "%");
+		//this는 자동으로 넘어와서 사용 가능하다. - 클릭한 대상의 객체
+		//str = this.firstChild.data;		
+		vp = document.createElement('p');
+		vp.appendChild(sale);
+		this.appendChild(vp);
+
+
+		
+	}
+
+</script>
+
+
+</head>
+<body>
+
+<div calss="box">
+	<pre>
+	파랑색 div를 클릭하면 
+	랜덤을 5~10 생성 * ?? + 5
+	할인율 5% = textNode를 생성
+	
+	p태그를 생성
+	p태그에 textNode를 자식으로 추가한다.
+	p태그를 파랑색 div에 자식으로 추가한다.
+	
+	클릭이벤트를 각각 div에 설정하지 않고 일괄 등록 방식으로 한다.
+	
+	</pre>
+
+	<div id="result1">
+			<div class="dimg">
+			 	<img src="../images/가구1.jpg" alt="">
+			</div>
+			<div class="dimg">
+				<img src="../images/국화.jpg" alt="">
+			</div>
+			<div class="dimg">
+				<img src="../images/단풍.jpg" alt="">
+			</div>
+			<div class="dimg">
+				<img src="../images/꽃.jpg" alt="">
+			</div>
+	</div>
+	
+
+</div>
+</body>
+</html>

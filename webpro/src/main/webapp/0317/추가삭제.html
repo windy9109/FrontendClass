@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+
+<script type="text/javascript">
+
+
+
+arr = ["별빛같은 나의 사랑아", "이제 나만 믿어요", "미운사람", "비망록",
+	"마량에 가고 싶다", "Hello", "Happy", "배신자","보라빛옆서"];
+	
+
+function proc1(q0) {
+	result = document.getElementById('result1');
+	
+	//랜덤발생 - arr의 문자를 선택
+	random = parseInt(Math.random()*arr.length);
+	
+	//선택된 문자를 가지고 textNode를 생성
+	str = document.createTextNode(arr[random]);
+	
+	//p태그를 생성
+	vp = document.createElement('p');
+	
+	//textNode를 p태그에 자식으로 추가한다.
+	vp.appendChild(str);
+	
+	
+	if(q0 == "추가"){
+		//result1에 p태그를 자식으로 추가한다.
+		result.appendChild(vp);
+	}else if(q0 == "삭제"){
+		//result1에 p태그를 자식으로 삭제한다.
+		result.lastChild.remove(vp);
+	}
+	
+}
+
+
+/* 버튼 클릭시 랜덤으로 문자열을 발생한다.
+문자열로 textNode를 생성한다.
+
+button을 생성 - input태그를 생성 - type, value설정
+
+p태그를 생성한다.
+p태그에 textNode와 button 자식으로 추가한다.
+result3에 p태그를 자식으로 추가한다. */
+
+function proc3(q3) {
+	result = document.getElementById('result3');
+	box2 = document.getElementsByTagName('.box')[0];
+	//랜덤발생 - arr의 문자를 선택
+	random = parseInt(Math.random()*arr.length);
+	
+	//선택된 문자를 가지고 textNode를 생성
+	str = document.createTextNode(arr[random]);
+	
+	//input태그생성
+	vbutton = document.createElement('input');
+	vbutton.type = "button";
+	vbutton.value = "삭제";
+	vbutton.onclick = function() {
+		this.parentNode.remove();
+	}
+	
+	
+	//p태그를 생성
+	vp = document.createElement('p');
+	
+	//textNode를 p태그에 자식으로 추가한다.
+	vp.appendChild(str);
+	vp.appendChild(vbutton);
+	
+	if(q3 == "추가"){
+		//result1에 p태그를 자식으로 추가한다.
+		result.appendChild(vp);
+	}else if(q3 == "삭제"){
+		//result1에 p태그를 자식으로 삭제한다.
+		result.lastChild.remove(vp);
+	}
+	
+}
+
+
+</script>
+</head>
+<body>
+
+<div calss="box">
+	<pre>
+	버튼 클릭시 랜덤으로 문자열을 발생한다.
+	문자열로 textNode를 생성한다.
+	p태그를 생성한다.
+	p태그에 textNode를 자식으로 추가한다.
+	result1에 p태그를 자식으로 추가한다.
+	</pre>
+	<input type="button" value="추가" onclick="proc1('추가')">
+	<input type="button" value="삭제" onclick="proc1('삭제')">
+	<div id="result1"></div>
+</div>
+
+
+
+<div calss="box">
+	<pre>
+	버튼 클릭시 랜덤으로 문자열을 발생한다.
+	문자열로 textNode를 생성한다.
+	
+	button을 생성 - input태그를 생성 - type, value설정
+	
+	p태그를 생성한다.
+	p태그에 textNode와 button 자식으로 추가한다.
+	result3에 p태그를 자식으로 추가한다.
+	</pre>
+	<input type="button" value="추가" onclick="proc3('추가')">
+	<div id="result3"></div>
+</div>
+
+
+
+
+</body>
+</html>

@@ -61,8 +61,8 @@ height: 50px;
 	background: #f3dab2;
 }
 
-.box input[type=button]{
-	margin: 5px 50px;
+.box input[type=button], .box button{
+	margin: 5px;
 	width: 60px;
 	height: 40px;
 	background: blue;
@@ -70,5 +70,7 @@ height: 50px;
 	border-radius: 20px;
 	
 }
+
+
 
 

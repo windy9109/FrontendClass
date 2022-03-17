@@ -6,8 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="PeopleSaxHandler"/>
+		<item key="selection" value="random"/>
 		<list key="findhistory">
+			<item value="random"/>
+			<item value="addImage"/>
+			<item value="first"/>
+			<item value="create"/>
+			<item value="TextNode"/>
+			<item value="addEven"/>
+			<item value="8080"/>
 			<item value="PeopleSaxHandler"/>
 			<item value="SAXexample"/>
 			<item value="public class"/>
@@ -16,20 +23,13 @@
 			<item value="4"/>
 			<item value=".sbox"/>
 			<item value="#right"/>
-			<item value="section"/>
-			<item value="sbox"/>
-			<item value="#left"/>
-			<item value="#left ul li"/>
-			<item value=".ss"/>
-			<item value="article"/>
-			<item value=".contain_box span"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="953"/>
-		<item key="DIALOG_Y_ORIGIN" value="279"/>
+		<item key="DIALOG_X_ORIGIN" value="597"/>
+		<item key="DIALOG_Y_ORIGIN" value="217"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="375"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
