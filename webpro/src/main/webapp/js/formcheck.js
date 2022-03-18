@@ -98,6 +98,38 @@
 			return false;
 		}
 		
+		//------------------------------------------------------
+		//비밀번호
+		passvalue = f.pass.value.trim();
+		
+		
+		//공백
+		if(passvalue.length < 1){
+			alert("비밀번호를 입력해주세요");
+			return false;
+		}
+		
+		//길이
+		
+		if(passvalue.length < 4 || passvalue.length > 12){
+			alert("비밀번호는 4이상 12이하로 입력해주세요");
+			return false;
+		}
+		
+		//정규식
+		passreg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{4,12}$/;
+		
+		
+		if( !(passreg.test(passvalue)) ){
+			alert("비밀번호 형식오류");
+			
+			//비밀번호 어디가 잘못되었는지
+			if( /^(?=.*[a-z])$/.test(passvalue) ){
+				
+			}
+			
+			return false;
+		}
 		
 		
 		

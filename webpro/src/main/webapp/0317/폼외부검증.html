@@ -16,16 +16,35 @@ function proc2() {
 	
 }
 
-passcheck = () => {
+/* passcheck = () => {
 	strvalue = ["원", "500원", "2000원", "10000원"];
 	
-	reg = /.+(?=원)/;
-	
+	reg = /.*(?=원)/;
+	//   /.+   => 1번이상 
+	//   /.*   => 0번이상 
 	str ="";
 	for(i=0; i<strvalue.length; i++){
-		str += strvalue[i].match(reg) + "\n";
+		//str += strvalue[i].match(reg) + "\n";
+		str += reg.test(strvalue[i]) + "\n";
 	}
 	alert(str);
+} */
+
+passcheck = () => {
+	passvalue = document.getElementById('pass2').value.trim();
+	passreg = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%&*]).{4,12}$/;
+	//[A-Z]를 반드시 포함한 
+	//[a-z]를 반드시 포함한 
+	//[0-9]를 반드시 포함한 
+	//[!@#$%&*]를 반드시 포함한 
+	
+	if(!(passreg.test(passvalue))){
+		alert("비밀번호 형식오류");
+		return false;
+	}
+	
+	alert("비밀번호 성공");
+	
 }
 
 </script>
@@ -41,7 +60,7 @@ passcheck = () => {
 	
 	</pre>
 		<label>비밀번호</label>
-	<input type="password" name="pass" id="pass2">
+	<input type="text" name="pass" id="pass2">
 	<br>
 		<input type='button' value='확인' onclick="passcheck()"><br>
 </div>

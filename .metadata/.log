@@ -2766,3 +2766,6 @@ npm notice Changelog: <https://github.com/npm/cli/releases/tag/v8.5.5>
 npm notice Run `npm install -g npm@8.5.5` to update!
 npm notice 
 
+
+!ENTRY org.eclipse.lsp4e 1 0 2022-03-18 17:14:25.127
+!MESSAGE [Info]	ESLint server running in node v16.9.0

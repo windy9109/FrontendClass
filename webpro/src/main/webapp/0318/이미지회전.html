@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<style>
+img{
+
+width: 100px;
+height: 100px;
+border-radius: 50%;
+
+}
+</style>
+
+<script>
+
+
+
+bv1 = null;
+
+function proc1(out) {
+
+	
+	//스타일로 설정된 테두리를 지운다.
+	
+	//시작버튼 감추기 - 더이상 클릭하지 못하도록
+	out.style.display = "none";
+	glout = out;
+	
+	//result1을 검색
+
+ 	 	if(bv1 != null){
+	 		bv1.style.border = "0px";
+		}  
+
+	
+	
+	//a = 1초마다 한번씩{ setInterval }
+	
+ 	a = setInterval(function() {
+ 		
+ 		vres1 = document.getElementById('result1');
+ 		vimg = vres1.getElementsByTagName('img')[0];
+ 		
+ 	 	vres1.appendChild(vimg);
+	}, 1000)  
+
+
+}
+
+
+stop = () => {
+
+	vres1 = document.getElementById('result1');
+	vimg = vres1.getElementsByTagName('img');
+
+	
+	//시작버튼 보이기
+	glout.style.display = "inline";
+	
+	clearInterval(a);
+	
+	//랜덤발생 - 0 ~ 이미지갯수만큼
+	random = parseInt(Math.random()*vimg.length);
+	
+	//랜덤발생된 번째 자식이미지의 스타일로 테두리를 설정한다.
+	vimg[random].style.border = "10px double #ff0000";	
+
+	bv1 = vimg[random];
+
+	
+	
+	//회전을 멈춘다.
+	
+	
+}
+
+
+
+
+</script>
+
+</head>
+<body>
+
+<div class="box">
+	<pre>
+		result1의 첫번째 자식(img)을 선택한다. - firstChild
+		선택한 자식을 맨 마지막 자식으로 추가한다(appendChild())
+		
+		appendChild() 수행시 기존의 존재하는 요소를 대상으로 작업시 
+		이동의 효과가 있다(잘라내기 - 붙여넣기) 
+	</pre>
+	<div id="result1">
+	<img src="../images/국화.jpg" alt=""> <!-- firstChild -->
+	<img src="../images/국화1.jpg" alt="">
+	<img src="../images/국화2.jpg" alt="">
+	<img src="../images/국화3.jpg" alt="">
+	<img src="../images/국화4.jpg" alt="">
+	<img src="../images/국화5.jpg" alt="">
+	<img src="../images/국화6.jpg" alt=""> <!-- lastChild -->
+	<!-- appendChild -->
+	</div>
+	
+		<input type="button" value="시작" onclick="proc1(this)">
+		<input type="button" value="종료" onclick="stop()">
+		
+</div>
+
+</body>
+</html>
