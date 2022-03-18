@@ -123,10 +123,22 @@
 		if( !(passreg.test(passvalue)) ){
 			alert("비밀번호 형식오류");
 			
-			//비밀번호 어디가 잘못되었는지
-			if( /^(?=.*[a-z])$/.test(passvalue) ){
-				
+			
+			//비밀번호 어디가 잘못되었는지 check하기
+			//정규식뒤에 .*와 같이 숫자 명시해줘야 정상작동함
+			if( !(/^(?=.*[a-z]).*$/.test(passvalue)) ){
+				alert("영문소문자가 필수로 포함되어야 합니다.");
 			}
+			if( !(/^(?=.*[A-Z]).*$/.test(passvalue)) ){
+				alert("영문대문자가 필수로 포함되어야 합니다.");
+			}
+			if( !(/^(?=.*[0-9]).*$/.test(passvalue)) ){
+				alert("숫자가 필수로 포함되어야 합니다.");
+			}
+			if( !(/^(?=.*[!@#$%^&*]).*$/.test(passvalue)) ){
+				alert("특수문자가 필수로 포함되어야 합니다.");
+			}
+			
 			
 			return false;
 		}
