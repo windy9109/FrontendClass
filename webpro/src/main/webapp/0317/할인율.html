@@ -8,10 +8,14 @@
 .dimg{
 width: 200px;
 height: 200px;
+display: inline-block;
 }
 img{
 width: 100%;
 height: 70%;
+}
+p{
+display: inline-block;
 }
 </style>
 
@@ -24,7 +28,13 @@ height: 70%;
 		}
 	}
 	
+	vp = null;
+	
 	function addImage() {
+		
+		if(vp != null){
+		vp.parentNode.removeChild(vp);
+		}
 		
 		random = parseInt(Math.random()*(10-5+1)+5);
 		sale = document.createTextNode("할인율: " +random+ "%");
@@ -34,6 +44,9 @@ height: 70%;
 		vp.appendChild(sale);
 		this.appendChild(vp);
 
+		
+		//click 이벤트종료
+		this.removeEventListener('click', addImage);
 
 		
 	}
