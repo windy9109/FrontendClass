@@ -2831,23 +2831,40 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.lsp4e 1 0 2022-03-18 21:32:14.094
 !MESSAGE [Info]	ESLint server running in node v16.9.0
+<<<<<<< HEAD
 !SESSION 2022-03-20 17:08:24.143 -----------------------------------------------
+=======
+!SESSION 2022-03-20 16:57:23.515 -----------------------------------------------
+>>>>>>> 8db970e601b251a686cd0c4dcace7305f5a06740
 eclipse.buildId=4.22.0.I20211124-1800
 java.version=17.0.1
 java.vendor=Eclipse Adoptium
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+<<<<<<< HEAD
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
 !ENTRY org.eclipse.jface 2 0 2022-03-20 17:08:27.066
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
 !SUBENTRY 1 org.eclipse.jface 2 0 2022-03-20 17:08:27.066
+=======
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data C:\frontendClass -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-03-20 16:57:26.442
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-20 16:57:26.442
+>>>>>>> 8db970e601b251a686cd0c4dcace7305f5a06740
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2eea0775,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@251db193,
+>>>>>>> 8db970e601b251a686cd0c4dcace7305f5a06740
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -2855,17 +2872,29 @@ Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@495a9305,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 !SUBENTRY 1 org.eclipse.jface 2 0 2022-03-20 17:08:27.066
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@109f95b1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-20 16:57:26.442
+>>>>>>> 8db970e601b251a686cd0c4dcace7305f5a06740
 !MESSAGE A conflict occurred for ALT+SHIFT+R:
 Binding(ALT+SHIFT+R,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
 		Rename the selected element,
 		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6a0a0f12,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4d20cbb5,
+>>>>>>> 8db970e601b251a686cd0c4dcace7305f5a06740
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -2873,12 +2902,20 @@ Binding(ALT+SHIFT+R,
 	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
 		Rename the selected item,
 		Category(org.eclipse.ui.category.file,File,null,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b6fea12,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@74eae1e0,
+>>>>>>> 8db970e601b251a686cd0c4dcace7305f5a06740
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.ui 4 4 2022-03-20 17:08:28.630
+=======
+!ENTRY org.eclipse.ui 4 4 2022-03-20 16:57:28.063
+>>>>>>> 8db970e601b251a686cd0c4dcace7305f5a06740
 !MESSAGE Unable to create part
 !STACK 1
 org.eclipse.ui.PartInitException: Cannot determine URI for '/webpro/src/main/webapp/0318/폼외부검증.html'.
@@ -3012,7 +3049,11 @@ Caused by: org.eclipse.core.runtime.CoreException: Cannot determine URI for '/we
 	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2290)
 	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3185)
 	... 115 more
+<<<<<<< HEAD
 !SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2022-03-20 17:08:28.632
+=======
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2022-03-20 16:57:28.065
+>>>>>>> 8db970e601b251a686cd0c4dcace7305f5a06740
 !MESSAGE Cannot determine URI for '/webpro/src/main/webapp/0318/폼외부검증.html'.
 !STACK 1
 org.eclipse.core.runtime.CoreException: Cannot determine URI for '/webpro/src/main/webapp/0318/폼외부검증.html'.
@@ -3143,16 +3184,24 @@ org.eclipse.core.runtime.CoreException: Cannot determine URI for '/webpro/src/ma
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+<<<<<<< HEAD
 !SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2022-03-20 17:08:28.634
 !MESSAGE Cannot determine URI for '/webpro/src/main/webapp/0318/폼외부검증.html'.
 
 !ENTRY org.eclipse.egit.ui 2 0 2022-03-20 17:08:29.227
+=======
+!SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2022-03-20 16:57:28.066
+!MESSAGE Cannot determine URI for '/webpro/src/main/webapp/0318/폼외부검증.html'.
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-20 16:57:28.663
+>>>>>>> 8db970e601b251a686cd0c4dcace7305f5a06740
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\789'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.jdt.launching 4 150 2022-03-20 17:09:02.716
 !MESSAGE The archive: D:/B_Util/5.ApacheTomcat/apache-tomcat-8.5.37/bin/bootstrap.jar which is referenced by the classpath, does not exist.
 
@@ -3742,3 +3791,164 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+=======
+!ENTRY org.eclipse.debug.ui 4 0 2022-03-20 16:57:29.563
+!MESSAGE Launch shortcut 'org.eclipse.wildwebdeveloper.chromeRunShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.wildwebdeveloper.isHTMLLaunchable, type=class org.eclipse.core.internal.resources.File, tester=org.eclipse.wildwebdeveloper.debug.IsLaunchableHTMLTester@4373b912]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:121)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:727)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:765)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:508)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:327)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:247)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:145)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.IPath.toFile()" because the return value of "org.eclipse.core.resources.IResource.getLocation()" is null
+	at org.eclipse.wildwebdeveloper.debug.AbstractDebugAdapterLaunchShortcut.canLaunchResource(AbstractDebugAdapterLaunchShortcut.java:72)
+	at org.eclipse.wildwebdeveloper.debug.AbstractHTMLDebugAdapterLaunchShortcut.canLaunchResource(AbstractHTMLDebugAdapterLaunchShortcut.java:34)
+	at org.eclipse.wildwebdeveloper.debug.IsLaunchableHTMLTester.test(IsLaunchableHTMLTester.java:29)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 17 more
+!SUBENTRY 1 org.eclipse.core.expressions 4 0 2022-03-20 16:57:29.564
+!MESSAGE Error evaluating Property [org.eclipse.wildwebdeveloper.isHTMLLaunchable, type=class org.eclipse.core.internal.resources.File, tester=org.eclipse.wildwebdeveloper.debug.IsLaunchableHTMLTester@4373b912]
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.IPath.toFile()" because the return value of "org.eclipse.core.resources.IResource.getLocation()" is null
+	at org.eclipse.wildwebdeveloper.debug.AbstractDebugAdapterLaunchShortcut.canLaunchResource(AbstractDebugAdapterLaunchShortcut.java:72)
+	at org.eclipse.wildwebdeveloper.debug.AbstractHTMLDebugAdapterLaunchShortcut.canLaunchResource(AbstractHTMLDebugAdapterLaunchShortcut.java:34)
+	at org.eclipse.wildwebdeveloper.debug.IsLaunchableHTMLTester.test(IsLaunchableHTMLTester.java:29)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:121)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:727)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:765)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:508)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:327)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:247)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:145)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 0 2022-03-20 16:57:29.565
+!MESSAGE Launch shortcut 'org.eclipse.wildwebdeveloper.firefoxRunShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.wildwebdeveloper.isHTMLLaunchable, type=class org.eclipse.core.internal.resources.File, tester=org.eclipse.wildwebdeveloper.debug.IsLaunchableHTMLTester@4373b912]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:121)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:727)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:765)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:508)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:327)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:247)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:145)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.IPath.toFile()" because the return value of "org.eclipse.core.resources.IResource.getLocation()" is null
+	at org.eclipse.wildwebdeveloper.debug.AbstractDebugAdapterLaunchShortcut.canLaunchResource(AbstractDebugAdapterLaunchShortcut.java:72)
+	at org.eclipse.wildwebdeveloper.debug.AbstractHTMLDebugAdapterLaunchShortcut.canLaunchResource(AbstractHTMLDebugAdapterLaunchShortcut.java:34)
+	at org.eclipse.wildwebdeveloper.debug.IsLaunchableHTMLTester.test(IsLaunchableHTMLTester.java:29)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 17 more
+!SUBENTRY 1 org.eclipse.core.expressions 4 0 2022-03-20 16:57:29.565
+!MESSAGE Error evaluating Property [org.eclipse.wildwebdeveloper.isHTMLLaunchable, type=class org.eclipse.core.internal.resources.File, tester=org.eclipse.wildwebdeveloper.debug.IsLaunchableHTMLTester@4373b912]
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.IPath.toFile()" because the return value of "org.eclipse.core.resources.IResource.getLocation()" is null
+	at org.eclipse.wildwebdeveloper.debug.AbstractDebugAdapterLaunchShortcut.canLaunchResource(AbstractDebugAdapterLaunchShortcut.java:72)
+	at org.eclipse.wildwebdeveloper.debug.AbstractHTMLDebugAdapterLaunchShortcut.canLaunchResource(AbstractHTMLDebugAdapterLaunchShortcut.java:34)
+	at org.eclipse.wildwebdeveloper.debug.IsLaunchableHTMLTester.test(IsLaunchableHTMLTester.java:29)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:121)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:727)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:765)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:508)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:327)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:247)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:145)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.ui 4 0 2022-03-20 16:57:29.566
+!MESSAGE Launch shortcut 'org.eclipse.wildwebdeveloper.npmLaunchShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.wildwebdeveloper.isPackageJSON, type=class org.eclipse.core.internal.resources.File, tester=org.eclipse.wildwebdeveloper.debug.npm.IsPackageJSONTester@1e759d85]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:121)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:727)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:765)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:508)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:327)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:247)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:145)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.IPath.toFile()" because the return value of "org.eclipse.core.resources.IResource.getLocation()" is null
+	at org.eclipse.wildwebdeveloper.debug.AbstractDebugAdapterLaunchShortcut.canLaunchResource(AbstractDebugAdapterLaunchShortcut.java:72)
+	at org.eclipse.wildwebdeveloper.debug.npm.IsPackageJSONTester.test(IsPackageJSONTester.java:26)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 17 more
+!SUBENTRY 1 org.eclipse.core.expressions 4 0 2022-03-20 16:57:29.567
+!MESSAGE Error evaluating Property [org.eclipse.wildwebdeveloper.isPackageJSON, type=class org.eclipse.core.internal.resources.File, tester=org.eclipse.wildwebdeveloper.debug.npm.IsPackageJSONTester@1e759d85]
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.IPath.toFile()" because the return value of "org.eclipse.core.resources.IResource.getLocation()" is null
+	at org.eclipse.wildwebdeveloper.debug.AbstractDebugAdapterLaunchShortcut.canLaunchResource(AbstractDebugAdapterLaunchShortcut.java:72)
+	at org.eclipse.wildwebdeveloper.debug.npm.IsPackageJSONTester.test(IsPackageJSONTester.java:26)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:121)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:727)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:765)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:508)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:327)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:247)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:145)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+>>>>>>> 8db970e601b251a686cd0c4dcace7305f5a06740
