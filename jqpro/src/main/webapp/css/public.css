@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+form{
+border: 1px solid blue;
+margin: 30px;
+padding: 30px;
+width:50%;
+}
+
+
+div{
+	width: 100%;
+height: auto;
+border: 1px solid red;
+background: yellow;
+background-image: linear-gradient(45deg, yellow, white);
+margin: 3px;
+}
+
+label{
+/* 인라인 요소에 크기조절
+	display : inline block */
+display: inline-block;
+width: 100px;
+height: 40px;
+
+}
+
+pre{
+	border: 1px dotted blue;
+	background: skyblue;
+	margin: 10px;
+	padding: 10px;
+	font-size:  1.2em;
+	height: auto;
+	
+}
+
+
+input[type=image]{
+	width:100px;
+	height:100px;
+}
+
+teble{
+border: 1px solid blue;
+margin: 30px auto;
+
+}
+td{
+width:200px;
+height: 50px;
+
+}
+
+.box div{
+	margin: 10px;
+	padding:  5px;
+	border: 1px dotted orange;
+	height: auto;
+	background: #f3dab2;
+}
+
+.box input[type=button], 
+.box button,
+.box input[type=reset],
+.box input[type=submit]{
+	margin: 5px;
+	width: 60px;
+	height: 40px;
+	background: blue;
+	color: white;
+	border-radius: 20px;
+	
+}
+
+
+
+
