@@ -1,26 +1,10 @@
 INDEX VERSION 1.4+D:\A_TeachingMaterial\05_JQuery\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-<<<<<<< HEAD
-=======
 2229796902.index
-1585106647.index
 1538746030.index
+1242919283.index
 993438108.index
-<<<<<<< HEAD
-3039210846.index
-1487633253.index
-3793629953.index
-4034369348.index
-2677677029.index
-=======
->>>>>>> 04e768c764863e424a4c158f88e01bdaaa0ce36a
 105438276.index
-993438108.index
-3745520761.index
-<<<<<<< HEAD
-1585106647.index
+4134031772.index
 3686285674.index
-2229796902.index
-1538746030.index
-=======
->>>>>>> 2940c1c1c56d1ea0538d94efc39a84feae5ef8d3
->>>>>>> 04e768c764863e424a4c158f88e01bdaaa0ce36a
+1585106647.index
+3745520761.index
