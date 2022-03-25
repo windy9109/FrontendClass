@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="80"/>
+		<item key="selection" value="checkTest"/>
 		<list key="findhistory">
+			<item value="checkTest"/>
 			<item value="80"/>
 			<item value="90"/>
 			<item value="  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."/>
@@ -22,7 +23,6 @@
 			<item value="addEven"/>
 			<item value="PeopleSaxHandler"/>
 			<item value="SAXexample"/>
-			<item value="public class"/>
 		</list>
 		<list key="replacehistory">
 		</list>
