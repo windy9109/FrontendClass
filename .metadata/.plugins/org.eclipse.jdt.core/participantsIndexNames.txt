@@ -1,16 +1,5 @@
 INDEX VERSION 1.131
-<<<<<<< HEAD
-D:\A_TeachingMaterial\05_JQuery\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2295934241.index
-\jqpro\src\main\java
-D:\A_TeachingMaterial\05_JQuery\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\520877225.index
-\jqpro\src\main\java
-D:\A_TeachingMaterial\05_JQuery\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4292746679.index
-\jqpro\src\main\java
-=======
-C:\frontendClass\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2398197495.index
+D:\A_TeachingMaterial\05_JQuery\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2398197495.index
 \webpro\src\main\java
-C:\frontendClass\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\883012242.index
-\webpro\src\main\java
-C:\frontendClass\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1242615343.index
-\webpro\src\main\java
->>>>>>> ec0a4c973daa085103a1b4308b655e900eaea0f2
+D:\A_TeachingMaterial\05_JQuery\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3894322372.index
+\jqpro\src\main\java
