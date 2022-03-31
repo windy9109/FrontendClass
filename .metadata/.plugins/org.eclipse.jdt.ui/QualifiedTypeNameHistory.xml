@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.net.UnknownHostException"/>
-    <fullyQualifiedTypeName name="java.net.MalformedURLException"/>
-    <fullyQualifiedTypeName name="java.net.URL"/>
-    <fullyQualifiedTypeName name="java.net.URLConnection"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.net.Socket"/>
     <fullyQualifiedTypeName name="java.io.OutputStream"/>
@@ -37,13 +32,9 @@
     <fullyQualifiedTypeName name="util.ScanUtil"/>
     <fullyQualifiedTypeName name="javax.annotation.Resources"/>
     <fullyQualifiedTypeName name="com.ibatis.common.resources.Resources"/>
-    <fullyQualifiedTypeName name="kr.or.ddit.member.vo.MemberVo"/>
     <fullyQualifiedTypeName name="kr.or.ddit.member.dao.IMemberDao"/>
     <fullyQualifiedTypeName name="kr.or.ddit.member.dao.MemberDaolmpl"/>
-    <fullyQualifiedTypeName name="kr.or.ddit.member.service.IMemberService"/>
-    <fullyQualifiedTypeName name="kr.or.ddit.member.service.MemberServicelmpl"/>
     <fullyQualifiedTypeName name="java.sql.SQLClientInfoException"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="kr.or.ddit.lprod.dao.LprodDao"/>
     <fullyQualifiedTypeName name="kr.or.ddit.lprod.dao.LprodDaoImpl"/>
     <fullyQualifiedTypeName name="kr.or.ddit.lprod.service.LprodService"/>
@@ -54,10 +45,19 @@
     <fullyQualifiedTypeName name="kr.or.ddit.buyer.dao.IBuyerDaoImpl"/>
     <fullyQualifiedTypeName name="com.ibatis.sqlmap.client.SqlMapClient"/>
     <fullyQualifiedTypeName name="kr.or.ddit.ibatis.config.SqlMapClientFactory"/>
-    <fullyQualifiedTypeName name="kr.or.ddit.prod.dao.IProdDaoImpl"/>
     <fullyQualifiedTypeName name="kr.or.ddit.prod.dao.IProdDao"/>
     <fullyQualifiedTypeName name="kr.or.ddit.prod.service.IProdServiceImpl"/>
     <fullyQualifiedTypeName name="kr.or.ddit.prod.service.IProdService"/>
     <fullyQualifiedTypeName name="com.google.gson.Gson"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
+    <fullyQualifiedTypeName name="com.google.gson.JsonElement"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.dao.zipDao"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.vo.ZipVo"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.vo.MemberVo"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.prod.dao.IProdDaoImpl"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.service.IMemberService"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.service.MemberServicelmpl"/>
 </qualifiedTypeNameHistroy>

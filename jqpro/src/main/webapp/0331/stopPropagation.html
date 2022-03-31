@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>
+$(function() {
+	
+	//이벤트확산을 방지
+	//(자식의 이벤트가 부모에게 영향을 미치지 않도록함)
+	
+	$('#btn1').on('click', function() {
+		$(this).css('border','5px solid #ff0000');
+		event.stopPropagation();
+	})
+	
+	
+	$('#sp').on('click', function() {
+		$(this).css('background','pink');
+		event.stopPropagation();
+	})
+	
+	$('#result1').on('click', function() {
+		$(this).css('background','red');
+		event.stopPropagation();
+	})
+	
+})
+</script>
+
+<style>
+.box div{
+width: 300px;
+height: 300px;
+padding: 20px;
+}
+#sp{
+width: 100px;
+height: 100px;
+padding: 30px;
+display: inline-block;
+background: lightblue;
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+	<pre>
+	</pre>
+	<div id="result1">
+		<span id ="sp">
+			<input type="button" value="확인" id="btn1">
+		</span>
+	</div>
+</div>
+</body>
+</html>
