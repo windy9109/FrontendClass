@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.net.Socket"/>
-    <fullyQualifiedTypeName name="java.io.OutputStream"/>
-    <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.io.DataInput"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.net.ServerSocket"/>
     <fullyQualifiedTypeName name="kr.or.ddit.basic.TCP.TcpMultiChatServer"/>
@@ -33,7 +26,6 @@
     <fullyQualifiedTypeName name="javax.annotation.Resources"/>
     <fullyQualifiedTypeName name="com.ibatis.common.resources.Resources"/>
     <fullyQualifiedTypeName name="kr.or.ddit.member.dao.IMemberDao"/>
-    <fullyQualifiedTypeName name="kr.or.ddit.member.dao.MemberDaolmpl"/>
     <fullyQualifiedTypeName name="java.sql.SQLClientInfoException"/>
     <fullyQualifiedTypeName name="kr.or.ddit.lprod.dao.LprodDao"/>
     <fullyQualifiedTypeName name="kr.or.ddit.lprod.dao.LprodDaoImpl"/>
@@ -43,7 +35,6 @@
     <fullyQualifiedTypeName name="kr.or.ddit.buyer.service.IBuyerService"/>
     <fullyQualifiedTypeName name="kr.or.ddit.buyer.service.IBuyerServiceImpl"/>
     <fullyQualifiedTypeName name="kr.or.ddit.buyer.dao.IBuyerDaoImpl"/>
-    <fullyQualifiedTypeName name="com.ibatis.sqlmap.client.SqlMapClient"/>
     <fullyQualifiedTypeName name="kr.or.ddit.ibatis.config.SqlMapClientFactory"/>
     <fullyQualifiedTypeName name="kr.or.ddit.prod.dao.IProdDao"/>
     <fullyQualifiedTypeName name="kr.or.ddit.prod.service.IProdServiceImpl"/>
@@ -53,11 +44,20 @@
     <fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
     <fullyQualifiedTypeName name="com.google.gson.JsonElement"/>
     <fullyQualifiedTypeName name="kr.or.ddit.member.dao.zipDao"/>
-    <fullyQualifiedTypeName name="kr.or.ddit.member.vo.ZipVo"/>
-    <fullyQualifiedTypeName name="kr.or.ddit.member.vo.MemberVo"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="kr.or.ddit.prod.dao.IProdDaoImpl"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.vo.MemberVo"/>
+    <fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
     <fullyQualifiedTypeName name="kr.or.ddit.member.service.IMemberService"/>
     <fullyQualifiedTypeName name="kr.or.ddit.member.service.MemberServicelmpl"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.dao.MemberDaolmpl"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.zip.controller.ZipServlet"/>
+    <fullyQualifiedTypeName name="com.ibatis.sqlmap.client.SqlMapClient"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.zip.Dao.ZipDaoImpl"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.zip.Dao.IZipDao"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.zip.Service.IZipService"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.zip.Service.ZipServiceImpl"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.member.vo.ZipVo"/>
 </qualifiedTypeNameHistroy>

@@ -63,16 +63,20 @@ public class MemberDaolmpl implements IMemberDao {
 		return list;
 	}
 
+	
+	
 	@Override
 	public String save(MemberVo vo) {
-		String result = null;
-		try {
-			result = (String) client.insert("member.Insert", vo);
-		} catch (SQLException e) {
-			e.printStackTrace();
+			String result = null;
+			try {
+				result = (String) client.insert("member.Insert", vo);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			return result;
 		}
-		return result;
-	}
+	
+	
 	}
 
 

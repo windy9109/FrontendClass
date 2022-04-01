@@ -14,7 +14,7 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
     	
     	<!-- 중복검사 -->
     	<select id="Count" resultClass="string" parameterClass="string">
-    		select MEM_ID from member where MEM_ID =#data#
+    		select mem_id from member where mem_id =#data#
     	</select>
     	
     	

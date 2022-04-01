@@ -10,7 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  
+  <script src="../js/jquery.serializejson.min.js"></script>
   <script>
   	$(function() {
   		//아이디 중복체크
@@ -19,7 +19,6 @@
 			
 			//입력한 값 가져오기
 			idvalue = $('#uid').val().trim();
-			
 			console.log(idvalue);
 			
 			//서버로 전송
@@ -114,8 +113,46 @@
 	
 	
 	
+	$('form').on('submit', function() {
+
+		
+		fdata1 = $('form').serialize();
+		fdata2 = $('form').serializeArray();
+		fdata3 = $('form').serializeJSON();
+		
+		
+		console.log(fdata1);
+		console.log(fdata2);
+		console.log(fdata3);
+		
+		
+		$.ajax({
+			url: '<%= request.getContextPath() %>/Insert.do',
+			data: fdata3,
+			type: 'post',
+			success: function(res) {
+				$('#joinspan').html(res.flag).css('color','red');
+				//alert(res.flag);
+			},
+			error: function(vhr) {
+				alert("상태: "+vhr.status)
+			},
+			dataType: 'json'
+			
+		})
+		
+		return false;
+		
 		
 	})
+	
+	
+	
+	
+	
+	
+	
+})
 	
 	
 	
@@ -144,7 +181,7 @@ background: lime;
   
     <div class="form-group">
       <label for="uid">아이디</label>
-      <button class="btn btn-info mb-2 mr-sm-2" id="chk">중복검사</button>
+      <button type="button" class="btn btn-info mb-2 mr-sm-2" id="chk">중복검사</button>
       <!--  required => 필수항목
       placeholder="Enter username" => default text  -->
       <input type="text" class="form-control control-label col-sm-3" id="uid" placeholder="Enter userid" name="mem_id" required>
@@ -165,7 +202,7 @@ background: lime;
     </div>
     <!-- 생년월일 -->
     <div class="form-group">
-      <label for="birth">생년월일</label>
+      <label for="day">생년월일</label>
       <!--  required => 필수항목
       placeholder="Enter username" => default text  -->
       <input type="data" class="form-control control-label col-sm-3" id="birth" placeholder="19999 04 15" name="mem_birth" required>
@@ -210,9 +247,9 @@ background: lime;
       <label for="uzip">우편번호</label>
       <!--  required => 필수항목
       placeholder="Enter username" => default text  -->
-      <button id="zipserach" class="btn btn-info mb-2 mr-sm-2" id="zipsearch">번호검색</button>
+      <button type="button" id="zipserach" class="btn btn-info mb-2 mr-sm-2" id="zipsearch">번호검색</button>
       <button type="button" id="zipserach" class="btn btn-info mb-2 mr-sm-2" data-toggle="modal" data-target="#myModal"> 번호검색modal </button>
-      <input type="text" class="form-control control-label col-sm-3" id="uzip" placeholder="Enter username" name="mem_add1" required>
+      <input type="text" class="form-control control-label col-sm-3" id="uzip" placeholder="Enter username" name="mem_zip" required>
       
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
@@ -222,7 +259,7 @@ background: lime;
       <label for="uadd1">주소</label>
       <!--  required => 필수항목
       placeholder="Enter username" => default text  -->
-      <input type="text" class="form-control control-label col-sm-3" id="uadd1" placeholder="Enter username" name="mem_add2" required>
+      <input type="text" class="form-control control-label col-sm-3" id="uadd1" placeholder="Enter username" name="mem_add1" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
@@ -231,13 +268,15 @@ background: lime;
       <label for="add3">상세주소</label>
       <!--  required => 필수항목
       placeholder="Enter username" => default text  -->
-      <input type="text" class="form-control control-label col-sm-3" id="add3" placeholder="Enter username" name="mem_add3" required>
+      <input type="text" class="form-control control-label col-sm-3" id="add3" placeholder="Enter username" name="mem_add2" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
     
     
     <button type="submit" class="btn btn-primary btn-sm"  >Submit</button>
+    <span id="joinspan"></span>
+    
   </form>
 </div>
 
@@ -281,6 +320,7 @@ background: lime;
     // Loop over them and prevent submission
     var validation = Array.prototype.filter.call(forms, function(form) {
       form.addEventListener('submit', function(event) {
+    	//데이터검사
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
