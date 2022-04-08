@@ -26,8 +26,8 @@
 		대신할 alias를 설정할 수 있다.
 		형식) <typeAlias alias="alias명" type="클래스의 전체이름"/>
 	-->
-<!-- 	<typeAlias alias="lprodVo"  type="kr.or.ddit.vo.LprodVO"/>
-	<typeAlias alias="memVo"  type="kr.or.ddit.basic.mvc.vo.MemberVO"/> -->
+ 	<typeAlias alias="boardVo"  type="kr.or.ddit.VO.BoardVo"></typeAlias>
+<!-- 	<typeAlias alias="memVo"  type="kr.or.ddit.basic.mvc.vo.MemberVO"/> -->
 	
 <!-- 	<typeAlias alias="memberVO"  type="kr.or.ddit.member.vo.MemberVo"/>
 	<typeAlias alias="lprodVO"  type="kr.or.ddit.lprod.vo.LprodVo"/>
@@ -52,8 +52,8 @@
 		아래와 같이 등록하면 된다.
 		형식) <sqlMap resource="경로명/파일명.xml"/>
 	-->
-<!-- 	<sqlMap resource="kr/or/ddit/iBatisTest/mapping/lprodTest.xml"/>
-	<sqlMap resource="kr/or/ddit/iBatisTest/mapping/jdbc.xml"/>
+ 	<sqlMap resource="kr/or/ddit/ibatis/mapping/board.xml"></sqlMap>
+<!-- 	<sqlMap resource="kr/or/ddit/iBatisTest/mapping/jdbc.xml"/>
 	<sqlMap resource="kr/or/ddit/iBatisTest/mapping/memberTest.xml"/> -->
 <!-- 	<sqlMap resource="kr/or/ddit/ibatis/mapping/member.xml"/>
 	<sqlMap resource="kr/or/ddit/ibatis/mapping/lprod.xml"/>

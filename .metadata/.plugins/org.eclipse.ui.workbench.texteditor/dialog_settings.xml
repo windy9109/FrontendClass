@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="hr"/>
+		<item key="selection" value="Collapsible Group Item #2"/>
 		<list key="findhistory">
+			<item value="Collapsible Group Item #2"/>
+			<item value="     Collapsible Group Item #2   "/>
+			<item value="제목20"/>
+			<item value="&#x09;&lt;div id=&quot;slideShow&quot;&gt; &lt;ul class=&quot;slides&quot;&gt; &lt;li&gt;"/>
 			<item value="hr"/>
 			<item value="p4"/>
 			<item value="flag"/>
@@ -19,10 +23,6 @@
 			<item value="chk"/>
 			<item value="idcnk"/>
 			<item value="idchk"/>
-			<item value="valid"/>
-			<item value="checkTest"/>
-			<item value="80"/>
-			<item value="90"/>
 		</list>
 		<list key="replacehistory">
 		</list>
