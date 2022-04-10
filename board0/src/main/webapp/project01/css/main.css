@@ -1,0 +1,253 @@
+@charset "UTF-8";
+
+
+/*index1.html*/
+ol{
+margin: 0;
+padding: 0;
+}
+*{
+ text-decoration: none;
+     list-style: none;
+}
+
+.logoimg{
+color: #000;	
+}
+iframe{
+	
+}
+header { background: #ebebeb; }
+header img {   width: 50px;  margin-left: 20px; }
+header h1{ display: inline-block; }
+nav{ text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #93b16d;
+    margin: 5px 0;
+    border-top: 2px dotted #93b16d; }
+ nav a{     font-family: monospace;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin: 15px; } 
+ contain{   }
+ #left{  display: inline-block;
+    width: 20%;
+    min-height: 407px;
+    float: left; }
+ #left ul{  padding: 0; }
+ #left ul li{ background: #585d70;
+    padding: 10px;
+    letter-spacing: -2px;
+    font-size: 14px;
+    border-bottom: 1px solid #4d4d58;
+    color: #fff;
+    }
+  #left ul li a{
+  color: #fff;
+    font-weight: 600;
+  }
+ section{  
+  width: 80%;
+    display: inline-block;
+    float: left;
+    background: #fff;
+    min-height: 455px;
+    }
+ #right{       width: 20%;
+    display: inline-block;
+    min-height: 407px; }
+ #right ol li{}
+ #wrap{     min-width: 1000px;
+    display: inline-block;
+    width: 100%; }
+ footer{ text-align: center;
+    padding: 30px;
+    background: #000;
+    color: #fff;
+        margin-top: 5px;
+     }   
+ 
+ article ol{
+        width: 33.333%;
+    display: inline-block;
+    float: left;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ 
+ 
+ 
+ /*computer*/
+article .contain_box img{
+width: 100%;
+}
+.contain_box span b{
+       display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.contain_box span bb > strong{
+   display: block;
+    padding-bottom: 10px;
+}
+
+.contain_box span{ 
+    margin: 5px;
+    display: table;
+    padding: 5px;
+    border: 1px solid #ddd;
+    padding-top: 0;
+    margin-top: 0;
+    min-height: 530px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: -webkit-fill-available;
+ }
+ 
+ .contain_box span li{
+    font-size: 12px;
+    padding: 0 0px 10px;
+ }
+ 
+ .contain_box span bb {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/*computer end*/
+
+
+
+
+article{
+        display: inline-block;
+    width: 100%;
+}
+#right ol{
+padding: 0 30px;
+}
+#right ol a{
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.ss{      width: 100%;
+    display: inline-block;
+    background: #768299;
+    }
+    
+        
+input[name=Id]{
+width: 100%;
+}   
+
+input[name=Pass]{
+width: 100%;
+}   
+
+
+
+/*회원가입, 장바구니*/
+
+table{  border: 3px solid #ddd;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto; }
+tr{  }
+td{  padding: 10px 30px;   border: 1px solid #ddd; }
+th{    padding: 10px; border: 1px solid #ddd; }
+
+tr td:nth-child(3), tr td:nth-child(4){ padding:0; }
+.con { height: 40px;
+    margin: 4px; text-align: center; }
+    
+.tit0{ text-align: center; }
+.button_shop{
+	    text-align: center;
+    padding: 20px;
+}
+
+
+#check0{   margin: 0 10px;
+    padding: 3px;
+    width: 100px; }
+ .register_rwap{   text-align: left;
+    display: inline-block;
+    padding-top: 20px; }
+    
+    
+.button_register{     padding: 20px 0; }
+.button_check{     width: 300px; }
+.gender{ width: auto; }   
+    
+.c1{ display: inline-block;
+    width: 100px; }    
+    
+    
+    
+    
+    
+/* clothing.html */    
+    
+article .contain_box_clot img{
+width: 100%;
+}
+.contain_box_clot span b{
+       display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.contain_box_clot span{ 
+    margin: 5px;
+    display: table;
+    padding: 5px;
+    border: 1px solid #ddd;
+    padding-top: 0;
+    margin-top: 0;
+    min-height: 530px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+ }
+ 
+ .contain_box_clot span li{
+        font-size: 12px;
+    padding: 10px 0;
+ }
+ 
+ 
+.sbox{
+	
+	display: inline-block;
+    width: 80%;
+    background: #cdc8bb;
+}
+ 
+ .contain_box_clot span bb {
+    display: table-cell;
+    vertical-align: middle;
+        padding: 20px;
+}
+
+
+.contain_box_clot{
+        width: 50%;
+    display: inline-block;
+    float: left;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ 
+ .contain_box_clot span bb strong{
+         display: block;
+    padding: 10px 0;
+ }
+ 
+ .login_box{
+ padding: 10px 0;
+ }
+ 

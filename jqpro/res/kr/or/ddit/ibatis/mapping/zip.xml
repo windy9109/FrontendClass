@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE sqlMap 
+PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+    "http://www.ibatis.com/dtd/sql-map-2.dtd">
+    
+    
+        <sqlMap namespace = "zip">
+        
+        	<select id ="zipList" resultClass="zipVO" parameterClass="string">
+        		select * from ziptb where dong like #data# || '%'
+        	</select>
+        	
+        	
+        	<!-- 지역출력 -->
+        	<select id ="zipsido" resultClass="string">
+        		select distinct sido from ziptb
+        	</select>
+        	
+        	<!-- 구출력 -->
+        	<select id ="zipgugun" resultClass="string" parameterClass="string">
+        		select distinct gugun from ziptb where sido = #data#
+        	</select>
+        	
+        	
+        	<!-- 동출력 -->
+        	<select id ="zipdong" resultClass="string" parameterClass="zipVO">
+        		select distinct dong from ziptb where sido =#sido# and gugun=#gugun#
+        	</select>
+        	
+        	
+        	<!-- 전체출력 -->
+        	<select id ="zipall" resultClass="zipVO" parameterClass="zipVO">
+        		select * from ziptb where sido =#sido# and gugun=#gugun# and dong like #dong# || '%'
+        	</select>
+        	
+        
+        </sqlMap>
+        
+        
+        
