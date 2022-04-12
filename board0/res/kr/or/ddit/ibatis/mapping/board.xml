@@ -12,7 +12,7 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
  		<dynamic prepend=" where">
  			<isNotEmpty property="stype" prepend=" and ">
  				<isNotEmpty property="sword">
- 					$stype$ like #sword#||'%'
+ 					$stype$ like '%'||#sword#||'%'
  				</isNotEmpty>
  			</isNotEmpty>
  		</dynamic>
@@ -36,6 +36,10 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
    		<include refid = "dynamicCondition"/>
    	</select>
    	
+   	
+   	<delete id="deleteBoard" parameterClass="int">
+   		delete from board1 where num = #data#
+   	</delete>
 
    	
    	

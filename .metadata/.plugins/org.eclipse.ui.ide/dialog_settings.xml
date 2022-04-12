@@ -7,6 +7,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\A_TeachingMaterial\05_JQuery"/>
 			<item value="C:\HighJava\baekJoon"/>
 			<item value="C:\frontendClass"/>
 			<item value="C:\HighJava\javaiOTest"/>

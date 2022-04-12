@@ -27,6 +27,7 @@
 		형식) <typeAlias alias="alias명" type="클래스의 전체이름"/>
 	-->
  	<typeAlias alias="boardVo"  type="kr.or.ddit.VO.BoardVo"></typeAlias>
+ 	<typeAlias alias="ReplyVo"  type="kr.or.ddit.VO.ReplyVo"></typeAlias>
 <!-- 	<typeAlias alias="memVo"  type="kr.or.ddit.basic.mvc.vo.MemberVO"/> -->
 	
 <!-- 	<typeAlias alias="memberVO"  type="kr.or.ddit.member.vo.MemberVo"/>
@@ -53,6 +54,7 @@
 		형식) <sqlMap resource="경로명/파일명.xml"/>
 	-->
  	<sqlMap resource="kr/or/ddit/ibatis/mapping/board.xml"></sqlMap>
+ 	<sqlMap resource="kr/or/ddit/ibatis/mapping/reply.xml"></sqlMap>
 <!-- 	<sqlMap resource="kr/or/ddit/iBatisTest/mapping/jdbc.xml"/>
 	<sqlMap resource="kr/or/ddit/iBatisTest/mapping/memberTest.xml"/> -->
 <!-- 	<sqlMap resource="kr/or/ddit/ibatis/mapping/member.xml"/>

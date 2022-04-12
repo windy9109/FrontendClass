@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="kr.or.ddit.basic.TCP.TcpMultiChatClient.ClientSender"/>
-    <fullyQualifiedTypeName name="kr.or.ddit.basic.TCP.TcpMultiChatClient.ClientRecriver"/>
-    <fullyQualifiedTypeName name="java.io.DataInputStream"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.net.DatagramSocket"/>
     <fullyQualifiedTypeName name="java.net.InetAddress"/>
     <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
@@ -35,7 +30,6 @@
     <fullyQualifiedTypeName name="kr.or.ddit.member.dao.zipDao"/>
     <fullyQualifiedTypeName name="kr.or.ddit.prod.dao.IProdDaoImpl"/>
     <fullyQualifiedTypeName name="kr.or.ddit.member.vo.MemberVo"/>
-    <fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
     <fullyQualifiedTypeName name="kr.or.ddit.member.service.IMemberService"/>
     <fullyQualifiedTypeName name="kr.or.ddit.member.service.MemberServicelmpl"/>
     <fullyQualifiedTypeName name="kr.or.ddit.member.dao.MemberDaolmpl"/>
@@ -56,8 +50,14 @@
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="kr.or.ddit.VO.BoardVo"/>
     <fullyQualifiedTypeName name="com.google.gson.Gson"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.board.Dao.ReplyDaoImpl"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.board.Dao.IReplyDao"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.VO.ReplyVo"/>
+    <fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.board.Service.IReplyService"/>
+    <fullyQualifiedTypeName name="kr.or.ddit.board.Service.ReplyServiceImpl"/>
 </qualifiedTypeNameHistroy>

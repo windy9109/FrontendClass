@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 
 import kr.or.ddit.VO.BoardVo;
 import kr.or.ddit.board.Service.BoardServiceImpl;
@@ -44,6 +46,9 @@ public class ListController extends HttpServlet {
 		String rqtype = request.getParameter("stype");
 		String rqword = request.getParameter("sword");
 		
+//		System.out.println("rqword==> "+rqword);
+//		System.out.println("rqtype==> "+rqtype);
+//		System.out.println("rqpage==> "+rqpage);
 		
 		//2. service객체 얻기 
 		IBoardService service = BoardServiceImpl.getInstance();
@@ -51,30 +56,41 @@ public class ListController extends HttpServlet {
 		
 		//page관련 작업 - 전체 글갯수, 총페이지수
 		//한페이지당 출력할 글갯수, 한 화면에 출력할 페이지 갯수
-		
-		
-		Map<String, Object> pmap = service.getPageInfo(rqpage);
+		Map<String, Object> pmap = service.getPageInfo(rqpage, rqtype, rqword);
+		int startval = (int)pmap.get("start");
+		int endval = (int)pmap.get("end");
+		int startpage = (int)pmap.get("startpage");
+		int endpage = (int)pmap.get("endpage");
+		int totalpage = (int)pmap.get("totalpage");
 		
 		
 		//paramete Map생성
-		Map<String, Integer> map = new HashMap<String, Integer>();
-		int startval = (int)pmap.get("start");
-		int endval = (int)pmap.get("end");
+		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("start", startval);
 		map.put("end", endval);
+		map.put("stype", rqtype);
+		map.put("sword", rqword);
+		
 		
 		//3. service메소드 호출하기 - 결과값 받기
 		List<BoardVo> list = service.selectList(map);
 		
-		//4. 결과값으로 응답데이터 생성 - html, text, xml, json데이터
+
+		//4. 결과값으로 응답 데이터 생성 - html, text, xml, Json 데이터 
+		JsonObject obj = new JsonObject();
+		obj.addProperty("totalp", totalpage);
+		obj.addProperty("startp", startpage);
+		obj.addProperty("endp", endpage);
+		
 		Gson gson = new Gson();
 		
-		String result = gson.toJson(list);
-		
+		JsonElement ele = gson.toJsonTree(list);
+				
+		obj.add("datas", ele);
 		response.setContentType("application/json; charset=utf-8");
 		PrintWriter out = response.getWriter();
 		
-		out.print(result);
+		out.print(obj);
 		out.flush();
 		
 		
