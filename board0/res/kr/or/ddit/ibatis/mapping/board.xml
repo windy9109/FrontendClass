@@ -41,6 +41,10 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
    		delete from board1 where num = #data#
    	</delete>
 
+
+	<update id ="updateHit" parameterClass="int">
+		update board1 set hit = hit+1 where num=#data#
+	</update>
    	
    	
  

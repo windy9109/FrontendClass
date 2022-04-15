@@ -33,11 +33,11 @@ public class ReplyDaoImpl implements IReplyDao {
 	
 	@Override
 	public int updateReply(ReplyVo vo) throws SQLException {
-		return (int)client.update("reply.insertReply", vo);
+		return (int)client.update("reply.updateReply", vo);
 	}
 	@Override
 	public int deleteReply(int reply) throws SQLException {
-		return (int)client.delete("reply.deleteReply", reply);
+		return (int)client.delete("reply.replyDelete", reply);
 	}
 	@Override
 	public List<ReplyVo> replyList(int bonum) throws SQLException {

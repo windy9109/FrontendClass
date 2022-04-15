@@ -57,6 +57,11 @@ public class BoardDaoImpl implements IBoardDao{
 		return (int)client.delete("board.deleteBoard", num);
 	}
 
+	@Override
+	public int updateHit(int num) throws SQLException {
+		return (int)client.update("board.updateHit", num);
+	}
+
 
 
 }

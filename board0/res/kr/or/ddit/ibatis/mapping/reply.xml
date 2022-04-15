@@ -26,10 +26,13 @@ PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
      	</select>
      	
      	
-    <delete id="deleteReply" parameterClass="int">
-   		delete from reply where bonum = #data#
+    <delete id="replyDelete" parameterClass="int">
+   		delete from reply where renum = #data#
    	</delete>
    	
+   	<update id = "updateReply" parameterClass="ReplyVo">
+   		update reply set cont=#cont#, redate = sysdate where renum = #renum#
+   	</update>
    	
      	
      </sqlMap>

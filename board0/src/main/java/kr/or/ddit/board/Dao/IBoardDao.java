@@ -20,5 +20,8 @@ public interface IBoardDao {
 	//글삭제
 	public int deleteBorad(int num)throws SQLException;
 	
+	//조회수 증가
+	public int updateHit(int num)throws SQLException;
+	
 
 }

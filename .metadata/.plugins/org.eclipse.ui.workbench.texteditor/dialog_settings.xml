@@ -6,30 +6,30 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="pagination"/>
+		<item key="selection" value="서버로"/>
 		<list key="findhistory">
+			<item value="서버로"/>
+			<item value="전송"/>
+			<item value="modi"/>
+			<item value="modify"/>
+			<item value="update"/>
+			<item value="title"/>
+			<item value="res."/>
+			<item value="actionIdx"/>
+			<item value="bonum"/>
 			<item value="pagination"/>
 			<item value="disabled"/>
 			<item value="next"/>
 			<item value="start"/>
 			<item value="pagelist"/>
 			<item value="8080"/>
-			<item value=".modal-body"/>
-			<item value="login_button"/>
-			<item value="header"/>
-			<item value="header img"/>
-			<item value="header .logolink"/>
-			<item value=".haederTop"/>
-			<item value="navbar"/>
-			<item value="navbar-expan"/>
-			<item value="bg-info"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="575"/>
-		<item key="DIALOG_Y_ORIGIN" value="263"/>
+		<item key="DIALOG_X_ORIGIN" value="1145"/>
+		<item key="DIALOG_Y_ORIGIN" value="258"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="375"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
