@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Collapsible Group Item #2"/>
+		<item key="selection" value="8080"/>
 		<list key="findhistory">
+			<item value="8080"/>
+			<item value="80"/>
 			<item value="Collapsible Group Item #2"/>
 			<item value="     Collapsible Group Item #2   "/>
 			<item value="제목20"/>
@@ -21,8 +23,6 @@
 			<item value="zipserach"/>
 			<item value="res"/>
 			<item value="chk"/>
-			<item value="idcnk"/>
-			<item value="idchk"/>
 		</list>
 		<list key="replacehistory">
 		</list>
