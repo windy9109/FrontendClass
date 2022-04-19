@@ -27,7 +27,7 @@ public class BoardServiceImpl implements IBoardService{
 	
 	
 	@Override
-	public List<BoardVo> selectList(Map<String, Integer> map) {
+	public List<BoardVo> selectList(Map<String, Object> map) {
 		List<BoardVo> list = null;
 
 		try {
@@ -42,10 +42,10 @@ public class BoardServiceImpl implements IBoardService{
 	}
 
 	@Override
-	public int totalCount() {
+	public int totalCount(Map<String, String> map) {
 		int count = 0;
 		try {
-			count = dao.totalCount();
+			count = dao.totalCount(map);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -55,14 +55,27 @@ public class BoardServiceImpl implements IBoardService{
 	}
 
 	@Override
-	public Map<String, Object> getPageInfo(int page) {
+	public Map<String, Object> getPageInfo(int page, String type, String word) {
 		Map<String, Object> map = new HashMap<String, Object>();
 		
-		//전체 글갯수 
-		int count = this.totalCount();
+
+	
 		
 		//한페이지당 출력할 글 갯수
 		int perlist = 3;
+		
+		// 한화면에 출력한 페이지 개수
+		int perpage = 2;
+		
+		
+		//한화면에 출력할 페이지 갯수
+		Map<String, String> paramapmap = new HashMap<String, String>();
+		paramapmap.put("stype", type);
+		paramapmap.put("sword", word);
+		
+		//전체 글갯수 
+		int count = this.totalCount(paramapmap);
+		
 		
 		//전체 페이지 수
 		int totalPage = (int)Math.ceil((double)count / perlist);
@@ -72,13 +85,56 @@ public class BoardServiceImpl implements IBoardService{
 		int end = start + perlist - 1;
 		if(end > count) end = count;
 		
+		
+		//startPage, endPage 구하기
+		//page1 => 1
+		//page2 => 1
+		//page3 => 3
+		//page4 => 3
+		int startPage= ((page -1)/perpage*perpage)+1;
+		int endPage = startPage+perpage-1;
+		
+		if(endPage > totalPage) endPage = totalPage;
+		
+		
 		map.put("start", start);
 		map.put("end", end);
-		
+		map.put("startpage", startPage);
+		map.put("endpage", endPage);
+		map.put("totalpage", totalPage);
+
 		
 		
 		
 		return map;
+	}
+
+	@Override
+	public int deleteBorad(int num) {
+		int res = 0;
+		
+		try {
+			res = dao.deleteBorad(num);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return res;
+	}
+
+	@Override
+	public int updateHit(int num) {
+		int res = 0;
+		
+		try {
+			res = dao.updateHit(num);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return res;
 	}
 
 

@@ -1,5 +1,54 @@
+<<<<<<< HEAD
 INDEX VERSION 1.131+C:\frontendClass\.metadata\.plugins\org.eclipse.jdt.core
 2406192616.index
+=======
+INDEX VERSION 1.131+D:\A_TeachingMaterial\05_JQuery\.metadata\.plugins\org.eclipse.jdt.core
+202585596.index
+3830767615.index
+3859996129.index
+2417924368.index
+3578768430.index
+1802182455.index
+3031474937.index
+942852205.index
+3124695628.index
+354499769.index
+1388435885.index
+828743508.index
+1468698257.index
+1425716597.index
+384361384.index
+2348367119.index
+4018592189.index
+4109986643.index
+482800896.index
+2990132493.index
+1346187164.index
+521718344.index
+3695450944.index
+2406192616.index
+406533184.index
+890088123.index
+1585106647.index
+2759542394.index
+924230747.index
+126847018.index
+4094222115.index
+3835993996.index
+3826547407.index
+1326036433.index
+1841339446.index
+1709270352.index
+954389047.index
+863149874.index
+4281074022.index
+3929289921.index
+196748364.index
+2426908521.index
+1898893925.index
+3077013297.index
+3900442749.index
+>>>>>>> 812a8eb459dcb1a872a5ca4f40f4cee36484b6ae
 993438108.index
 1869091569.index
 2207851580.index
@@ -46,6 +95,7 @@ INDEX VERSION 1.131+C:\frontendClass\.metadata\.plugins\org.eclipse.jdt.core
 3578768430.index
 721910936.index
 3734960078.index
+<<<<<<< HEAD
 3124695628.index
 2348367119.index
 2353590365.index
@@ -60,3 +110,6 @@ INDEX VERSION 1.131+C:\frontendClass\.metadata\.plugins\org.eclipse.jdt.core
 4153703680.index
 3929289921.index
 3830767615.index
+=======
+2292057276.index
+>>>>>>> 812a8eb459dcb1a872a5ca4f40f4cee36484b6ae

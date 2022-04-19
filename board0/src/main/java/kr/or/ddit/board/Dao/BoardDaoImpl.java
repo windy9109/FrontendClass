@@ -28,7 +28,7 @@ public class BoardDaoImpl implements IBoardDao{
 	
 	
 	@Override
-	public List<BoardVo> selectList(Map<String, Integer> map) throws SQLException {
+	public List<BoardVo> selectList(Map<String, Object> map) throws SQLException {
 //		List<BoardVo> list = null;
 //		
 //		list = client.queryForList("board.selectList",map);
@@ -40,15 +40,26 @@ public class BoardDaoImpl implements IBoardDao{
 	}
 
 	@Override
-	public int totalCount() throws SQLException {
+	public int totalCount(Map<String, String> map) throws SQLException {
 		//결과가 하나면 queryForObject
-		return (int)client.queryForObject("board.totalCount");
+		return (int)client.queryForObject("board.totalCount", map);
 	}
 
 	@Override
 	public Map<String, Object> getPageInfo(int page) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public int deleteBorad(int num) throws SQLException {
+		// TODO Auto-generated method stub
+		return (int)client.delete("board.deleteBoard", num);
+	}
+
+	@Override
+	public int updateHit(int num) throws SQLException {
+		return (int)client.update("board.updateHit", num);
 	}
 
 
