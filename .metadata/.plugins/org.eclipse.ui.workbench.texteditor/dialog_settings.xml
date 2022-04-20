@@ -6,6 +6,25 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+<<<<<<< HEAD
+		<item key="selection" value="8080"/>
+		<list key="findhistory">
+			<item value="8080"/>
+			<item value="80"/>
+			<item value="Collapsible Group Item #2"/>
+			<item value="     Collapsible Group Item #2   "/>
+			<item value="제목20"/>
+			<item value="&#x09;&lt;div id=&quot;slideShow&quot;&gt; &lt;ul class=&quot;slides&quot;&gt; &lt;li&gt;"/>
+			<item value="hr"/>
+			<item value="p4"/>
+			<item value="flag"/>
+			<item value="getContextPath"/>
+			<item value="request.getContextPath"/>
+			<item value="ziptr"/>
+			<item value="zipserach"/>
+			<item value="res"/>
+			<item value="chk"/>
+=======
 		<item key="selection" value="서버로"/>
 		<list key="findhistory">
 			<item value="서버로"/>
@@ -23,6 +42,7 @@
 			<item value="start"/>
 			<item value="pagelist"/>
 			<item value="8080"/>
+>>>>>>> 812a8eb459dcb1a872a5ca4f40f4cee36484b6ae
 		</list>
 		<list key="replacehistory">
 		</list>

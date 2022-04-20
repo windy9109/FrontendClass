@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+INDEX VERSION 1.4+C:\frontendClass\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+993438108.index
+3571490855.index
+1160753519.index
+1585106647.index
+3039210846.index
+1487633253.index
+3793629953.index
+4034369348.index
+2677677029.index
+=======
 INDEX VERSION 1.4+D:\A_TeachingMaterial\05_JQuery\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 105438276.index
 993438108.index
@@ -8,3 +20,4 @@ INDEX VERSION 1.4+D:\A_TeachingMaterial\05_JQuery\.metadata\.plugins\org.eclipse
 1425716597.index
 2229796902.index
 1538746030.index
+>>>>>>> 812a8eb459dcb1a872a5ca4f40f4cee36484b6ae
