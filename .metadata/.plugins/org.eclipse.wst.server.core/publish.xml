@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <publish-info>
-<<<<<<< HEAD
   <server id="Tomcat v8.5 Server at localhost" path="publish2.dat"/>
-=======
-  <server id="Tomcat v8.5 Server at localhost" path="publish1.dat"/>
->>>>>>> 812a8eb459dcb1a872a5ca4f40f4cee36484b6ae
 </publish-info>

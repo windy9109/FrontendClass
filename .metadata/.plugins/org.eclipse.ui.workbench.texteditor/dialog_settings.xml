@@ -1,64 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="setWater"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-<<<<<<< HEAD
-		<item key="selection" value="8080"/>
 		<list key="findhistory">
-			<item value="8080"/>
+			<item value="setWater"/>
+			<item value=".mate"/>
 			<item value="80"/>
-			<item value="Collapsible Group Item #2"/>
-			<item value="     Collapsible Group Item #2   "/>
-			<item value="제목20"/>
-			<item value="&#x09;&lt;div id=&quot;slideShow&quot;&gt; &lt;ul class=&quot;slides&quot;&gt; &lt;li&gt;"/>
-			<item value="hr"/>
-			<item value="p4"/>
-			<item value="flag"/>
-			<item value="getContextPath"/>
-			<item value="request.getContextPath"/>
-			<item value="ziptr"/>
-			<item value="zipserach"/>
-			<item value="res"/>
-			<item value="chk"/>
-=======
-		<item key="selection" value="서버로"/>
-		<list key="findhistory">
-			<item value="서버로"/>
-			<item value="전송"/>
-			<item value="modi"/>
-			<item value="modify"/>
-			<item value="update"/>
-			<item value="title"/>
-			<item value="res."/>
-			<item value="actionIdx"/>
-			<item value="bonum"/>
-			<item value="pagination"/>
-			<item value="disabled"/>
-			<item value="next"/>
-			<item value="start"/>
-			<item value="pagelist"/>
-			<item value="8080"/>
->>>>>>> 812a8eb459dcb1a872a5ca4f40f4cee36484b6ae
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1145"/>
-		<item key="DIALOG_Y_ORIGIN" value="258"/>
+		<item key="DIALOG_X_ORIGIN" value="807"/>
+		<item key="DIALOG_Y_ORIGIN" value="268"/>
 		<item key="DIALOG_WIDTH" value="322"/>
-		<item key="DIALOG_HEIGHT" value="375"/>
-		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
-	</section>
-	<section name="org.eclipse.wst.html.ui.internal.preferences.ui.HTMLTemplatePreferencePage$HTMLEditTemplateDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="-373"/>
-		<item key="DIALOG_Y_ORIGIN" value="132"/>
-		<item key="DIALOG_WIDTH" value="855"/>
-		<item key="DIALOG_HEIGHT" value="502"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 </section>

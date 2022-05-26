@@ -3,4 +3,5 @@
   <module moduleId="org.eclipse.jst.jee.server:webpro" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:jqpro" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:board0" serverId="Tomcat v8.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Game" serverId="Tomcat v8.5 Server at localhost"/>
 </modules>
