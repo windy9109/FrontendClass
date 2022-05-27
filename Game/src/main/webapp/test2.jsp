@@ -36,9 +36,11 @@
     
     function setWater(pot){
     	if(flag == true ){
-    		var pot = document.querySelectorAll(".pot");
-    		//pot.style.cursor = "pointer"; 
-    	    alert("안녕");
+    		//var pot1 = document.querySelector(pot);
+    		//pot.style.cursor = "pointer";
+    		pot.style.background = "url(1_1.png)";
+
+
     	}
 
 
@@ -114,17 +116,17 @@ position: absolute;
    
    
    .pot1{
-   	border: 1px solid;
+
    }
    .pot2{
-   	border: 1px solid;
+
    	margin-left: 45px !important;
    }
    .pot3{
-   	border: 1px solid;
+
    }
    .pot4{
-   	border: 1px solid;
+
    	margin-left: 45px !important;
    }
    .pot{
@@ -132,6 +134,8 @@ position: absolute;
     height: 70px;
     display: inline-block;
     margin-left: 15px;
+    background-position: -14px -6px !important;
+    border-radius:100%;
    }
    .pot_wrap{
     position: absolute;
@@ -139,10 +143,12 @@ position: absolute;
     left: 100px;
    }
    .pot_sub1{
-   margin-left: 45px;
+   margin-left: 47px;
+    margin-top: 3px;
    }
    .pot_sub2{
-   margin-top: 24px;
+      margin-top: 32px;
+    margin-left: 5px;
    }
     </style>
 </head>
