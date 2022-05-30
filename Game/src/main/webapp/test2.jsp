@@ -10,7 +10,16 @@
     
     
     <!-- HTML5 API Drag and Drop -->
+    
+    
+    
 	 <script>
+	 
+/* 	 $(function(){
+		 
+	 }) */
+
+	 
 		function dragEnter(ev) {
 			ev.preventDefault();
 		}
@@ -29,17 +38,31 @@
 			qww = ev.target.closest('.pot').childNodes;
 			var arr = Array.prototype.slice.call(qww);
 
+			//ev.target.closest('.pot');
 
+			console.log(arr[0].parentNode.id);
 			
+			//만약 
  			for(var i = 0; i<arr.length; i++ ){
 				if(data == arr[i].id){
 					return;
 				}  	
 			}  
-
+			
+			
+			
+/* 			for(i=0; i<ev.target.closest('.pot').classList.length; i++){
+				if(ev.target.closest('.pot').classList[i] == "t1"){
+					console.log("성공");	
+				}		
+			} */
+			
  			ev.target.closest('div').appendChild(er.cloneNode());// 다른 div태그에 img를 추가함(옮김. 드래그처리)
 			
-			
+ 			//만약 모든재료가 가득찼다면
+ 			if(arr.length == 4 && arr[0].parentNode.id == "t1"){
+				alert("꽉찼습니다.");		
+			}  
 			
 			
 			
@@ -52,48 +75,104 @@
 	
     <script>
     var flag = false;
+
     
 	    function setCursor(){
-		        var circle = document.querySelector(".circle");
-		        
-		        var img_ju = document.querySelector(".img_ju");
-		    		 const listen0 = (e) => {
-		            const mouseX = e.clientX;
-		            const mouseY = e.clientY;
-		            circle.style.left = mouseX + 'px';
-		            circle.style.top = mouseY + 'px';
-		            circle.style.display = "block";
-		            img_ju.style.display = "none";
-		            flag = true;
-		        }; 
+	        var circle = document.querySelector(".circle");
+	        var img_ju = document.querySelector(".img_ju");
 
-		        document.addEventListener("mousemove", listen0);
-		        var pot;
-		        for (var j = 0; j < 4; j++) {
-		        	pot = document.querySelectorAll(".pot")[j];
-		        	console.log(pot)
-		        	pot.style.cursor = "pointer";	  
-		        }	
-		        
+
+			       
+				    document.addEventListener('mousemove',e=>{
+				    	const mouseX = e.clientX;
+			            const mouseY = e.clientY;
+			            circle.style.left = mouseX + 'px';
+			            circle.style.top = mouseY + 'px';
+			            circle.style.display = "block";
+			            img_ju.style.display = "none";
+			           // circle.style.z-index= "99999";
+			            flag = true;    
+			        });
+		            
+		            
+		            for (var j = 0; j < 4; j++) {
+			        	pot = document.querySelectorAll(".pot")[j];
+			        	//console.log(pot)
+			        	pot.style.cursor = "pointer";	
+		        }
+   
 	    	
 
 
     }
 	    
+	    
+
+	    
+	    
         function setWater(pot){
+
+	        var circle = document.querySelector(".circle");
+	        var img_ju = document.querySelector(".img_ju");
+	        
         	if(flag == true ){
-        		//var pot1 = document.querySelector(pot);
-        		//pot.style.cursor = "pointer";
         		pot.style.background = "url(img/1_1.png)";
-        		flag = false;
+        		pot.id ='t1';
+        		
+    			
+    			
+			    document.addEventListener('mousemove',e=>{
+			    	const mouseX = e.clientX;
+		            const mouseY = e.clientY;
+		            circle.style.left = '0px ';
+		            circle.style.top = '0px ';
+		            circle.style.display = "none";
+		            img_ju.style.display = "block ";
+		           	// circle.style.z-index= "0";
+		            flag = false;    
+		        });
+			    
+			    qww = pot.childNodes;
+			    var arr = Array.prototype.slice.call(qww);
+			    
+			   	// qww = ev.target.closest('.pot').childNodes;
+    			//var arr = Array.prototype.slice.call(qww);
+    			
+    			
+			    //console.log(arr.length);
+			    
+			    
+			    //만약 모든재료가 가득찼다면
+	 			if(arr.length >= 5){
+	 				for (var i = 1; i <arr.length; i++) {
+	 					arr[i].remove();
+	 					pot.id ='';
+	 					pot.style.background = "url(img/last.png)";
+	 					pot.style.backgroundSize = "125px 75px";
+	 					pot.style.backgroundPosition = "-3px -4px !important";
+	 				}
+					//alert("꽉찼습니다.");		
+				} 
+			    
         	}
-  
-    }
+        	
+
+        
+        	
+ 
+ 			
+    } 
         
         
 
     </script>
     <style>
+    .mate .su1{
+       top: 0 !important;
+    left: 0 !important;
+    padding: 17px 25px;
+    }
+    
         * {
             margin: 0;
         }
@@ -118,6 +197,7 @@ position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: -100px;
+    z-index: 99999;
         }
         
    .img_ju{
@@ -237,10 +317,10 @@ margin-left: 47px !important;
         z-index: 9;
 		}
 		#mon3{
-width: 80px;
-    height: 53px;
-        top: 10px;
-    left: 20px;
+width: 85px;
+    height: 43px;
+    top: 20px;
+    left: 18px;
 		}
 		#mon4{
 		width: 61px;
@@ -279,17 +359,17 @@ width: 80px;
 	<div class="pot_sub1">
 	
 
-		<div class="qw11 pot1 pot" id="y1" onclick="setWater(this);" ondrop="drop(event)"  ondragover="dragEnter(event)">1</div>
-		<div class="qw11 pot2 pot" id="y1" onclick="setWater(this);" ondrop="drop(event)"  ondragover="dragEnter(event)">2</div>
+		<div class="qw11 pot1 pot"  onclick="setWater(this);" ondrop="drop(event)"  ondragover="dragEnter(event)">1</div>
+		<div class="qw11 pot2 pot"  onclick="setWater(this);" ondrop="drop(event)"  ondragover="dragEnter(event)">2</div>
 	</div>
 	<div class="pot_sub2">
-		<div class="qw11 pot3 pot" id="y1" onclick="setWater(this);" ondrop="drop(event)"  ondragover="dragEnter(event)">3</div>
-		<div class="qw11 pot4 pot" id="y1" onclick="setWater(this);" ondrop="drop(event)"  ondragover="dragEnter(event)">4</div>
+		<div class="qw11 pot3 pot" onclick="setWater(this);" ondrop="drop(event)"  ondragover="dragEnter(event)">3</div>
+		<div class="qw11 pot4 pot" onclick="setWater(this);" ondrop="drop(event)"  ondragover="dragEnter(event)">4</div>
 	</div>
 </div>
 
 
-			<div onclick="setCursor()" >
+			<div id="setC" onclick="setCursor()" >
 				<img src="img/pngwing.png" class="img_ju">
 			</div>
 
