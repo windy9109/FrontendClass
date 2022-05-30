@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="-14px -6px !important"/>
 			<item value="setWater"/>
 			<item value=".mate"/>
 			<item value="80"/>
