@@ -19,7 +19,7 @@
 		 
 	 }) */
 
-	 
+	 var arr=[];
 		function dragEnter(ev) {
 			ev.preventDefault();
 		}
@@ -33,16 +33,26 @@
 			//console.log(ev);
 			//ev.preventDefault();
 			var data = ev.dataTransfer.getData("text"); // img태그 아이디를 가져옴
-
+			//console.log(document.getElementById(data))
 			er = document.getElementById(data);
+			a1 = ev.target.closest('.pot');
+			//console.log("a1:"+a1);
 			qww = ev.target.closest('.pot').childNodes;
+			//console.log("qww: "+qww.node);
+			
+/* 			for(var i=0; i<qww.length; i++){
+				
+				console.log(qww.nodeValue;);
+			} */
+			
 			var arr = Array.prototype.slice.call(qww);
+			console.log("arr: "+arr);
 
 			//ev.target.closest('.pot');
 
-			console.log(arr[0].parentNode.id);
+			//console.log(arr[0].parentNode);
 			
-			//만약 
+			//만약 이미 추가된 인스턴스라면 처음으로
  			for(var i = 0; i<arr.length; i++ ){
 				if(data == arr[i].id){
 					return;
@@ -56,14 +66,39 @@
 					console.log("성공");	
 				}		
 			} */
+			//console.log(ev.target.closest('div'));
 			
  			ev.target.closest('div').appendChild(er.cloneNode());// 다른 div태그에 img를 추가함(옮김. 드래그처리)
 			
+ 			//var ww1 = document.getElementById(ev.target.closest('div').id);
+ 			//ev.target.closest('div').removeChild(arr);
+ 			//console.log(arr[0].parentElement);
+ 			
  			//만약 모든재료가 가득찼다면
- 			if(arr.length == 4 && arr[0].parentNode.id == "t1"){
-				alert("꽉찼습니다.");		
+ 			if(arr.length >= 4 && arr[0].parentNode.id == "t1"){
+					arr[0].parentNode.id ='';
+ 					arr[0].parentNode.style.background = 'url("img/last.png") 0% 0% / 140px 78px';
+ 					//arr[0].parentNode.remove();
+ 					//arr[0].parentNode.removeChild();
+/*  				for (var i = 1; i < arr.length; i++) {
+ 					//pot.style.backgroundSize = "125px 75px";
+ 					//pot.style.backgroundPosition = "-3px -4px !important";
+ 					console.log(i+"번째"+arr[i]+"삭제완료");
+ 					arr[i].remove();
+ 				}  */
+ 				console.log(document.querySelector(arr[0].parentNode.id+" img")[i]);
+ 				
+ 				//arr[1].remove();
+ 				//arr[2].remove();
+ 				//arr[3].remove();
+ 				//arr[4].remove();
+ 				
+ 				if(arr.length == 0){
+ 					//arr[0].parentNode.appendChild("0");
+ 				}
+				//alert("꽉찼습니다.");		
 			}  
-			
+ 			
 			
 			
 		}
@@ -139,17 +174,18 @@
     			//var arr = Array.prototype.slice.call(qww);
     			
     			
-			    //console.log(arr.length);
+		
 			    
+		
 			    
 			    //만약 모든재료가 가득찼다면
 	 			if(arr.length >= 5){
-	 				for (var i = 1; i <arr.length; i++) {
+	 				for (var i = 1; i < arr.length; i++) {
 	 					arr[i].remove();
 	 					pot.id ='';
-	 					pot.style.background = "url(img/last.png)";
-	 					pot.style.backgroundSize = "125px 75px";
-	 					pot.style.backgroundPosition = "-3px -4px !important";
+	 					pot.style.background = 'url("img/last.png") 0% 0% / 140px 78px';
+	 					//pot.style.backgroundSize = "125px 75px";
+	 					//pot.style.backgroundPosition = "-3px -4px !important";
 	 				}
 					//alert("꽉찼습니다.");		
 				} 
